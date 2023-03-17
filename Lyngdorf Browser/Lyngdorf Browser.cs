@@ -2,14 +2,14 @@
 using System.Windows.Forms;
 using CefSharp;
 using CefSharp.WinForms;
-using System.Net.NetworkInformation;
+using LyngdorfBrowser.Class;
 
 namespace LyngdorfBrowser
 {
     public partial class MainForm : Form
     {
         private String _url = string.Empty;
-        private ChromiumWebBrowser ChromeBrowser;
+        private ChromiumWebBrowser _chromeBrowser;
 
         public MainForm()
         {
@@ -21,7 +21,7 @@ namespace LyngdorfBrowser
         {
             try
             {
-                string ipAddress = IPMacMapper.FindIPFromMacAddress("50-1e-2d");
+                string ipAddress = IpMacMapper.FindIpFromMacAddress("50-1e-2d");
                 if (ipAddress == null)
                 {
                     MessageBox.Show(@"No Lyngdorf devices found on network");
@@ -29,15 +29,14 @@ namespace LyngdorfBrowser
                 else
                 {
                     _url = "http://" + ipAddress.Replace("\"", "");
-                    ChromeBrowser = new ChromiumWebBrowser(_url);
-                    Controls.Add(ChromeBrowser);
-                    ChromeBrowser.Dock = DockStyle.Fill;
+                    _chromeBrowser = new ChromiumWebBrowser(_url);
+                    Controls.Add(_chromeBrowser);
+                    _chromeBrowser.Dock = DockStyle.Fill;
                 }
             }
             catch
             {
                 MessageBox.Show(@"Failed to get IP address for Lyngdorf device found on network");
-                return;
             }
 
             // FUll MAC address
