@@ -44,11 +44,19 @@ namespace LyngdorfBrowser
 
         public static string FindIPFromMacAddress(string macAddress)
         {
+            // Part of MAC address
             InitializeGetIPsAndMac();
-            IPAndMac item = list.SingleOrDefault(x => x.MAC == macAddress);
+            IPAndMac item = list.SingleOrDefault(x => x.MAC.StartsWith(macAddress, StringComparison.OrdinalIgnoreCase));
             if (item == null)
                 return null;
             return item.IP;
+
+            // Full MAC address
+            // InitializeGetIPsAndMac();
+            // IPAndMac item = list.SingleOrDefault(x => x.MAC == macAddress);
+            // if (item == null)
+            //     return null;
+            // return item.IP;
         }
 
         public static string FindMacFromIPAddress(string ip)
