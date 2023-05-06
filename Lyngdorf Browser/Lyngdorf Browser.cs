@@ -27,14 +27,15 @@ namespace LyngdorfBrowser
         {
             Invoke(new Action(() =>
             {
-                // Check if the original text has already been appended
-                if (!Text.StartsWith(originalText))
+                switch (Text.StartsWith(originalText))
                 {
-                    Text = $@"{originalText} - {e.Title}";
-                }
-                else
-                {
-                    Text = $@"{originalText} - {e.Title}";
+                    // Check if the original text has already been appended
+                    case false:
+                        Text = $@"{originalText}: {e.Title}";
+                        break;
+                    default:
+                        Text = $@"{originalText}: {e.Title}";
+                        break;
                 }
             }));
         }
@@ -46,7 +47,7 @@ namespace LyngdorfBrowser
                 string ipAddress = IpMacMapper.FindIpFromMacAddress("50-1e-2d");
                 if (ipAddress == null)
                 {
-                    MessageBox.Show(@"No Lyngdorf devices found on network");
+                    MessageBox.Show(@"No Lyngdorf devices found on your network");
                 }
                 else
                 {
@@ -59,7 +60,7 @@ namespace LyngdorfBrowser
             }
             catch
             {
-                MessageBox.Show(@"Failed to get IP address for Lyngdorf device found on network");
+                MessageBox.Show(@"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this");
             }
 
             // FUll MAC address
