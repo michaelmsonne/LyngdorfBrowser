@@ -10,6 +10,7 @@ namespace LyngdorfBrowser
     {
         private String _url = string.Empty;
         private ChromiumWebBrowser _chromeBrowser;
+        private string originalText;
 
         public MainForm()
         {
@@ -17,9 +18,25 @@ namespace LyngdorfBrowser
             InitializeChromium();
         }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            originalText = Text; // Store the original form text in a variable
+        }
+
         private void Browser_TitleChanged(object sender, TitleChangedEventArgs e)
         {
-            Invoke(new Action(() => { Text = e.Title; }));
+            Invoke(new Action(() =>
+            {
+                // Check if the original text has already been appended
+                if (!Text.StartsWith(originalText))
+                {
+                    Text = $@"{originalText} - {e.Title}";
+                }
+                else
+                {
+                    Text = $@"{originalText} - {e.Title}";
+                }
+            }));
         }
 
         public void InitializeChromium()
