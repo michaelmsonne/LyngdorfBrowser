@@ -17,6 +17,11 @@ namespace LyngdorfBrowser
             InitializeChromium();
         }
 
+        private void Browser_TitleChanged(object sender, TitleChangedEventArgs e)
+        {
+            Invoke(new Action(() => { Text = e.Title; }));
+        }
+
         public void InitializeChromium()
         {
             try
@@ -31,6 +36,7 @@ namespace LyngdorfBrowser
                     _url = "http://" + ipAddress.Replace("\"", "");
                     _chromeBrowser = new ChromiumWebBrowser(_url);
                     Controls.Add(_chromeBrowser);
+                    _chromeBrowser.TitleChanged += Browser_TitleChanged;
                     _chromeBrowser.Dock = DockStyle.Fill;
                 }
             }
