@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Lyngdorf Browser")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Connect to your Lyngdorf device automaticly on its IP address and control it from your computer")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Lyngdorf Browser")]
-[assembly: AssemblyCopyright("Copyright © 2021")]
+[assembly: AssemblyCopyright("Copyright © Michael Morten Sonne")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
