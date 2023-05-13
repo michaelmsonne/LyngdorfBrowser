@@ -11,7 +11,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LyngdorfBrowser</RootNamespace>
-    <AssemblyName>Lyngdorf Browser</AssemblyName>
+    <AssemblyName>LyngdorfBrowser</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -169,6 +169,15 @@
     <Error Condition="!Exists('..\packages\CefSharp.Common.112.3.0\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.112.3.0\build\CefSharp.Common.targets'))" />
   </Target>
   <Import Project="..\packages\CefSharp.Common.112.3.0\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.112.3.0\build\CefSharp.Common.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>if $(ConfigurationName) == Release (
+  echo "Release build - signing output file(s)!".
+  "C:\Program Files (x86)\Windows Kits\10\App Certification Kit\signtool.exe" sign /n "Michael Morten Sonne" /fd sha256 /tr http://timestamp.sectigo.com /td sha256 /as /v  $(TargetPath)
+  echo "Release build - signing output file(s) done!".
+) ELSE (
+  echo "Debug build!".
+)</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
