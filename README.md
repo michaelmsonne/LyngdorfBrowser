@@ -32,6 +32,16 @@ If no IP address is found, the code displays a message box indicating that no Ly
 
 The code also sets up an event handler for the TitleChanged event of the ChromiumWebBrowser control. This event is triggered when the title of the browser window changes, which can happen when the user navigates to a different page or performs an action in the Lyngdorf web interface. The event handler updates the title of the main application window to reflect the title of the browser window, providing a more seamless browsing experience for the user.
 
+# Email report sample:
+
+**Homepage:**
+
+![Screenshot](docs/lyngdorf-homepage.jpg)
+
+**Settings:**
+
+![Screenshot](docs/lyngdorf-settings.jpg)
+
 ## How to build
 
 - Get [Visual Studio 2022](https://visualstudio.microsoft.com/vs/community/) (Community Edition is fine)
