@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lyngdorf Browser", "Lyngdorf Browser\Lyngdorf Browser.csproj", "{7612E05A-90F3-4CC4-B498-E6A1FFA61326}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyngdorfBrowser", "Lyngdorf Browser\LyngdorfBrowser.csproj", "{7612E05A-90F3-4CC4-B498-E6A1FFA61326}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
