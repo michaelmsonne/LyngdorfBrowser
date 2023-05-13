@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="20.6" version="20.6" Modules="simple" RootPath="." Language="en" Id="{5A781212-2739-4D47-A037-39A4668FEED5}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.Core.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.exe" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.xml" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LICENSE.txt" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LyngdorfBrowser.exe" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_README.txt" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_af.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_am.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ar.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_bg.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_bn.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ca.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_chrome_100_percent.pak" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_chrome_200_percent.pak" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_chrome_elf.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_cs.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_d3dcompiler_47.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_da.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_de.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_el.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_enGB.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_enUS.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_es.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_es419.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_et.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_fa.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_fi.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_fil.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_fr.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_gu.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_he.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_hi.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_hr.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_hu.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_icudtl.dat" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_id.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_it.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ja.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_kn.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ko.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libEGL.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libGLESv2.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libcef.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_lt.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_lv.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ml.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_mr.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ms.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_nb.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_nl.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_pl.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ptBR.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ptPT.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_resources.pak" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ro.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ru.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_sk.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_sl.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_snapshot_blob.bin" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_sr.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_sv.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_sw.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ta.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_te.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_th.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_tr.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_uk.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ur.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_v8_context_snapshot.bin" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_vi.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_vk_swiftshader.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_vk_swiftshader_icd.json" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_vulkan1.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_zhCN.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_zhTW.pak" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.Core.dll" Value="CefSharp.BrowserSubprocess.Core.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb" Value="CefSharp.BrowserSubprocess.Core.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.exe" Value="CefSharp.BrowserSubprocess.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.pdb" Value="CefSharp.BrowserSubprocess.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.dll" Value="CefSharp.Core.Runtime.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.pdb" Value="CefSharp.Core.Runtime.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.xml" Value="CefSharp.Core.Runtime.xml"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LICENSE.txt" Value="LICENSE.txt"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LyngdorfBrowser.exe" Value="LyngdorfBrowser.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_README.txt" Value="README.txt"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_af.pak" Value="af.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_am.pak" Value="am.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ar.pak" Value="ar.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_bg.pak" Value="bg.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_bn.pak" Value="bn.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ca.pak" Value="ca.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_chrome_100_percent.pak" Value="chrome_100_percent.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_chrome_200_percent.pak" Value="chrome_200_percent.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_chrome_elf.dll" Value="chrome_elf.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_cs.pak" Value="cs.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_d3dcompiler_47.dll" Value="d3dcompiler_47.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_da.pak" Value="da.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_de.pak" Value="de.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_el.pak" Value="el.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_enGB.pak" Value="en-GB.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_enUS.pak" Value="en-US.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_es.pak" Value="es.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_es419.pak" Value="es-419.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_et.pak" Value="et.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_fa.pak" Value="fa.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_fi.pak" Value="fi.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_fil.pak" Value="fil.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_fr.pak" Value="fr.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_gu.pak" Value="gu.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_he.pak" Value="he.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_hi.pak" Value="hi.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_hr.pak" Value="hr.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_hu.pak" Value="hu.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_icudtl.dat" Value="icudtl.dat"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_id.pak" Value="id.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_it.pak" Value="it.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ja.pak" Value="ja.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_kn.pak" Value="kn.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ko.pak" Value="ko.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libEGL.dll" Value="libEGL.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libGLESv2.dll" Value="libGLESv2.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libcef.dll" Value="libcef.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_lt.pak" Value="lt.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_lv.pak" Value="lv.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ml.pak" Value="ml.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_mr.pak" Value="mr.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ms.pak" Value="ms.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_nb.pak" Value="nb.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_nl.pak" Value="nl.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_pl.pak" Value="pl.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ptBR.pak" Value="pt-BR.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ptPT.pak" Value="pt-PT.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_resources.pak" Value="resources.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ro.pak" Value="ro.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ru.pak" Value="ru.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_sk.pak" Value="sk.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_sl.pak" Value="sl.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_snapshot_blob.bin" Value="snapshot_blob.bin"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_sr.pak" Value="sr.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_sv.pak" Value="sv.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_sw.pak" Value="sw.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ta.pak" Value="ta.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_te.pak" Value="te.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_th.pak" Value="th.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_tr.pak" Value="tr.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_uk.pak" Value="uk.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ur.pak" Value="ur.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_v8_context_snapshot.bin" Value="v8_context_snapshot.bin"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_vi.pak" Value="vi.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_vk_swiftshader.dll" Value="vk_swiftshader.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_vk_swiftshader_icd.json" Value="vk_swiftshader_icd.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_vulkan1.dll" Value="vulkan-1.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_zhCN.pak" Value="zh-CN.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_zhTW.pak" Value="zh-TW.pak"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="Your Company"/>
+    <ROW Property="ProductCode" Value="1033:{800383B7-0E96-4823-A38D-C3F44D836FF1} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Your Application"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{E2BF1EFF-C1F2-4347-8A26-4E2490FEBE01}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="LyngdorfBrowser_Dir" Directory_Parent="APPDIR" DefaultDir="LYNGDO~1|LyngdorfBrowser"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="locales_Dir" Directory_Parent="LyngdorfBrowser_Dir" DefaultDir="locales"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{789383ED-54D5-4B41-9E50-FC50B30DF982}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="LyngdorfBrowser_ContentOutput" ComponentId="{391B37DB-A243-462F-AD2E-60D824AD0706}" Directory_="LyngdorfBrowser_Dir" Attributes="0" KeyPath="chrome_100_percent.pak" Type="0"/>
+    <ROW Component="LyngdorfBrowser_ContentOutput_locales" ComponentId="{1C53E513-9644-4C00-8EA4-4442145F382A}" Directory_="locales_Dir" Attributes="0" KeyPath="af.pak" Type="0"/>
+    <ROW Component="LyngdorfBrowser_PrimaryOutput" ComponentId="{9CAF2E15-7D5A-46B5-AA03-F0F6BA0382F9}" Directory_="LyngdorfBrowser_Dir" Attributes="256" KeyPath="LyngdorfBrowser.exe"/>
+    <ROW Component="ProductInformation" ComponentId="{9BA6131E-8CC0-4A05-906F-D7E7450AAB41}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{4365BBCE-B51B-4D31-9021-EE21DF184CA2}" Directory_="SHORTCUTDIR" Attributes="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="LyngdorfBrowser.exe" Component_="LyngdorfBrowser_PrimaryOutput" FileName="LYNGDO~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_LyngdorfBrowser.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_LyngdorfBrowser.exe&gt;" SelfReg="false"/>
+    <ROW File="chrome_100_percent.pak" Component_="LyngdorfBrowser_ContentOutput" FileName="CHROME~2.PAK|[|AI_PROPPATH_FILENAME_PERBUILD_chrome_100_percent.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_chrome_100_percent.pak&gt;" SelfReg="false"/>
+    <ROW File="chrome_200_percent.pak" Component_="LyngdorfBrowser_ContentOutput" FileName="CHROME~3.PAK|[|AI_PROPPATH_FILENAME_PERBUILD_chrome_200_percent.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_chrome_200_percent.pak&gt;" SelfReg="false"/>
+    <ROW File="chrome_elf.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="CHROME~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_chrome_elf.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_chrome_elf.dll&gt;" SelfReg="false"/>
+    <ROW File="d3dcompiler_47.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="D3DCOM~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_d3dcompiler_47.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_d3dcompiler_47.dll&gt;" SelfReg="false"/>
+    <ROW File="icudtl.dat" Component_="LyngdorfBrowser_ContentOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_icudtl.dat]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_icudtl.dat&gt;" SelfReg="false"/>
+    <ROW File="libcef.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_libcef.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libcef.dll&gt;" SelfReg="false"/>
+    <ROW File="libEGL.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_libEGL.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libEGL.dll&gt;" SelfReg="false"/>
+    <ROW File="libGLESv2.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="LIBGLE~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_libGLESv2.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libGLESv2.dll&gt;" SelfReg="false"/>
+    <ROW File="LICENSE.txt" Component_="LyngdorfBrowser_ContentOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_LICENSE.txt]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_LICENSE.txt&gt;" SelfReg="false"/>
+    <ROW File="af.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_af.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_af.pak&gt;" SelfReg="false"/>
+    <ROW File="am.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_am.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_am.pak&gt;" SelfReg="false"/>
+    <ROW File="ar.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ar.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ar.pak&gt;" SelfReg="false"/>
+    <ROW File="bg.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_bg.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_bg.pak&gt;" SelfReg="false"/>
+    <ROW File="bn.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_bn.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_bn.pak&gt;" SelfReg="false"/>
+    <ROW File="ca.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ca.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ca.pak&gt;" SelfReg="false"/>
+    <ROW File="cs.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_cs.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_cs.pak&gt;" SelfReg="false"/>
+    <ROW File="da.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_da.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_da.pak&gt;" SelfReg="false"/>
+    <ROW File="de.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_de.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_de.pak&gt;" SelfReg="false"/>
+    <ROW File="el.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_el.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_el.pak&gt;" SelfReg="false"/>
+    <ROW File="enGB.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_enGB.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_enGB.pak&gt;" SelfReg="false"/>
+    <ROW File="enUS.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_enUS.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_enUS.pak&gt;" SelfReg="false"/>
+    <ROW File="es419.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_es419.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_es419.pak&gt;" SelfReg="false"/>
+    <ROW File="es.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_es.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_es.pak&gt;" SelfReg="false"/>
+    <ROW File="et.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_et.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_et.pak&gt;" SelfReg="false"/>
+    <ROW File="fa.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_fa.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_fa.pak&gt;" SelfReg="false"/>
+    <ROW File="fi.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_fi.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_fi.pak&gt;" SelfReg="false"/>
+    <ROW File="fil.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_fil.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_fil.pak&gt;" SelfReg="false"/>
+    <ROW File="fr.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_fr.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_fr.pak&gt;" SelfReg="false"/>
+    <ROW File="gu.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_gu.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_gu.pak&gt;" SelfReg="false"/>
+    <ROW File="he.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_he.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_he.pak&gt;" SelfReg="false"/>
+    <ROW File="hi.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_hi.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_hi.pak&gt;" SelfReg="false"/>
+    <ROW File="hr.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_hr.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_hr.pak&gt;" SelfReg="false"/>
+    <ROW File="hu.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_hu.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_hu.pak&gt;" SelfReg="false"/>
+    <ROW File="id.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_id.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_id.pak&gt;" SelfReg="false"/>
+    <ROW File="it.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_it.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_it.pak&gt;" SelfReg="false"/>
+    <ROW File="ja.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ja.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ja.pak&gt;" SelfReg="false"/>
+    <ROW File="kn.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_kn.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_kn.pak&gt;" SelfReg="false"/>
+    <ROW File="ko.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ko.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ko.pak&gt;" SelfReg="false"/>
+    <ROW File="lt.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_lt.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_lt.pak&gt;" SelfReg="false"/>
+    <ROW File="lv.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_lv.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_lv.pak&gt;" SelfReg="false"/>
+    <ROW File="ml.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ml.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ml.pak&gt;" SelfReg="false"/>
+    <ROW File="mr.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_mr.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_mr.pak&gt;" SelfReg="false"/>
+    <ROW File="ms.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ms.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ms.pak&gt;" SelfReg="false"/>
+    <ROW File="nb.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_nb.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_nb.pak&gt;" SelfReg="false"/>
+    <ROW File="nl.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_nl.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_nl.pak&gt;" SelfReg="false"/>
+    <ROW File="pl.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_pl.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_pl.pak&gt;" SelfReg="false"/>
+    <ROW File="ptBR.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ptBR.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ptBR.pak&gt;" SelfReg="false"/>
+    <ROW File="ptPT.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ptPT.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ptPT.pak&gt;" SelfReg="false"/>
+    <ROW File="ro.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ro.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ro.pak&gt;" SelfReg="false"/>
+    <ROW File="ru.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ru.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ru.pak&gt;" SelfReg="false"/>
+    <ROW File="sk.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_sk.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_sk.pak&gt;" SelfReg="false"/>
+    <ROW File="sl.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_sl.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_sl.pak&gt;" SelfReg="false"/>
+    <ROW File="sr.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_sr.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_sr.pak&gt;" SelfReg="false"/>
+    <ROW File="sv.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_sv.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_sv.pak&gt;" SelfReg="false"/>
+    <ROW File="sw.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_sw.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_sw.pak&gt;" SelfReg="false"/>
+    <ROW File="ta.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ta.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ta.pak&gt;" SelfReg="false"/>
+    <ROW File="te.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_te.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_te.pak&gt;" SelfReg="false"/>
+    <ROW File="th.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_th.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_th.pak&gt;" SelfReg="false"/>
+    <ROW File="tr.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_tr.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_tr.pak&gt;" SelfReg="false"/>
+    <ROW File="uk.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_uk.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_uk.pak&gt;" SelfReg="false"/>
+    <ROW File="ur.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ur.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ur.pak&gt;" SelfReg="false"/>
+    <ROW File="vi.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_vi.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_vi.pak&gt;" SelfReg="false"/>
+    <ROW File="zhCN.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_zhCN.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_zhCN.pak&gt;" SelfReg="false"/>
+    <ROW File="zhTW.pak" Component_="LyngdorfBrowser_ContentOutput_locales" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_zhTW.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_zhTW.pak&gt;" SelfReg="false"/>
+    <ROW File="README.txt" Component_="LyngdorfBrowser_ContentOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_README.txt]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_README.txt&gt;" SelfReg="false"/>
+    <ROW File="resources.pak" Component_="LyngdorfBrowser_ContentOutput" FileName="RESOUR~2.PAK|[|AI_PROPPATH_FILENAME_PERBUILD_resources.pak]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_resources.pak&gt;" SelfReg="false"/>
+    <ROW File="snapshot_blob.bin" Component_="LyngdorfBrowser_ContentOutput" FileName="SNAPSH~2.BIN|[|AI_PROPPATH_FILENAME_PERBUILD_snapshot_blob.bin]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_snapshot_blob.bin&gt;" SelfReg="false"/>
+    <ROW File="v8_context_snapshot.bin" Component_="LyngdorfBrowser_ContentOutput" FileName="V8_CON~2.BIN|[|AI_PROPPATH_FILENAME_PERBUILD_v8_context_snapshot.bin]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_v8_context_snapshot.bin&gt;" SelfReg="false"/>
+    <ROW File="vk_swiftshader.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="VK_SWI~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_vk_swiftshader.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_vk_swiftshader.dll&gt;" SelfReg="false"/>
+    <ROW File="vk_swiftshader_icd.json" Component_="LyngdorfBrowser_ContentOutput" FileName="VK_SWI~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_vk_swiftshader_icd.json]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_vk_swiftshader_icd.json&gt;" SelfReg="false"/>
+    <ROW File="vulkan1.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_vulkan1.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_vulkan1.dll&gt;" SelfReg="false"/>
+    <ROW File="CefSharp.BrowserSubprocess.Core.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.Core.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.Core.dll&gt;" SelfReg="false"/>
+    <ROW File="CefSharp.BrowserSubprocess.Core.pdb" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb&gt;" SelfReg="false"/>
+    <ROW File="CefSharp.BrowserSubprocess.exe" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.exe&gt;" SelfReg="false" DigSign="true"/>
+    <ROW File="CefSharp.BrowserSubprocess.pdb" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~3.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.pdb&gt;" SelfReg="false"/>
+    <ROW File="CefSharp.Core.Runtime.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.dll&gt;" SelfReg="false"/>
+    <ROW File="CefSharp.Core.Runtime.pdb" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~4.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.pdb&gt;" SelfReg="false"/>
+    <ROW File="CefSharp.Core.Runtime.xml" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~2.XML|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.xml]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.xml&gt;" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.Core.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.Core.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.Core.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.xml" Path="[|AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.xml]\[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.xml]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_LICENSE.txt" Path="[|AI_PROPPATH_DIR_PERBUILD_LICENSE.txt]\[|AI_PROPPATH_FILENAME_PERBUILD_LICENSE.txt]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_LyngdorfBrowser.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_LyngdorfBrowser.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_LyngdorfBrowser.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_README.txt" Path="[|AI_PROPPATH_DIR_PERBUILD_README.txt]\[|AI_PROPPATH_FILENAME_PERBUILD_README.txt]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_af.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_af.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_af.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_am.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_am.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_am.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ar.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ar.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ar.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_bg.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_bg.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_bg.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_bn.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_bn.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_bn.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ca.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ca.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ca.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_chrome_100_percent.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_chrome_100_percent.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_chrome_100_percent.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_chrome_200_percent.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_chrome_200_percent.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_chrome_200_percent.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_chrome_elf.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_chrome_elf.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_chrome_elf.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_cs.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_cs.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_cs.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_d3dcompiler_47.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_d3dcompiler_47.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_d3dcompiler_47.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_da.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_da.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_da.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_de.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_de.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_de.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_el.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_el.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_el.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_enGB.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_enGB.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_enGB.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_enUS.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_enUS.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_enUS.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_es.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_es.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_es.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_es419.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_es419.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_es419.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_et.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_et.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_et.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_fa.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_fa.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_fa.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_fi.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_fi.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_fi.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_fil.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_fil.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_fil.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_fr.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_fr.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_fr.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_gu.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_gu.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_gu.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_he.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_he.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_he.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_hi.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_hi.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_hi.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_hr.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_hr.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_hr.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_hu.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_hu.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_hu.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_icudtl.dat" Path="[|AI_PROPPATH_DIR_PERBUILD_icudtl.dat]\[|AI_PROPPATH_FILENAME_PERBUILD_icudtl.dat]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_id.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_id.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_id.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_it.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_it.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_it.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ja.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ja.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ja.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_kn.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_kn.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_kn.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ko.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ko.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ko.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libEGL.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_libEGL.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_libEGL.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libGLESv2.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_libGLESv2.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_libGLESv2.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libcef.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_libcef.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_libcef.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_lt.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_lt.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_lt.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_lv.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_lv.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_lv.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ml.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ml.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ml.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_mr.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_mr.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_mr.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ms.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ms.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ms.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_nb.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_nb.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_nb.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_nl.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_nl.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_nl.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_pl.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_pl.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_pl.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ptBR.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ptBR.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ptBR.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ptPT.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ptPT.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ptPT.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_resources.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_resources.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_resources.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ro.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ro.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ro.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ru.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ru.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ru.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_sk.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_sk.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_sk.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_sl.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_sl.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_sl.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_snapshot_blob.bin" Path="[|AI_PROPPATH_DIR_PERBUILD_snapshot_blob.bin]\[|AI_PROPPATH_FILENAME_PERBUILD_snapshot_blob.bin]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_sr.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_sr.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_sr.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_sv.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_sv.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_sv.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_sw.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_sw.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_sw.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ta.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ta.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ta.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_te.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_te.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_te.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_th.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_th.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_th.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_tr.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_tr.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_tr.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_uk.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_uk.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_uk.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ur.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_ur.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_ur.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_v8_context_snapshot.bin" Path="[|AI_PROPPATH_DIR_PERBUILD_v8_context_snapshot.bin]\[|AI_PROPPATH_FILENAME_PERBUILD_v8_context_snapshot.bin]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_vi.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_vi.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_vi.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_vk_swiftshader.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_vk_swiftshader.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_vk_swiftshader.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_vk_swiftshader_icd.json" Path="[|AI_PROPPATH_DIR_PERBUILD_vk_swiftshader_icd.json]\[|AI_PROPPATH_FILENAME_PERBUILD_vk_swiftshader_icd.json]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_vulkan1.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_vulkan1.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_vulkan1.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_zhCN.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_zhCN.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_zhCN.pak]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_zhTW.pak" Path="[|AI_PROPPATH_DIR_PERBUILD_zhTW.pak]\[|AI_PROPPATH_FILENAME_PERBUILD_zhTW.pak]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="LyngdorfBrowser_PrimaryOutput"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="LyngdorfBrowser_ContentOutput"/>
+    <ROW Feature_="MainFeature" Component_="LyngdorfBrowser_ContentOutput_locales"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="LyngdorfBrowser" Directory_="SHORTCUTDIR" Name="LYNGDO~1|LyngdorfBrowser" Component_="LyngdorfBrowser_PrimaryOutput" Target="[#LyngdorfBrowser.exe]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.VsProjectComponent">
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="PrimaryOutput" OutputFile="LyngdorfBrowser.exe" OutputFileShortcut="LyngdorfBrowser"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="chrome_100_percent.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="chrome_200_percent.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="chrome_elf.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="d3dcompiler_47.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="icudtl.dat"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="libcef.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="libEGL.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="libGLESv2.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="LICENSE.txt"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="af.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="am.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ar.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="bg.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="bn.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ca.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="cs.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="da.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="de.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="el.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="enGB.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="enUS.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="es419.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="es.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="et.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="fa.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="fi.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="fil.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="fr.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="gu.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="he.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="hi.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="hr.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="hu.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="id.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="it.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ja.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="kn.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ko.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="lt.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="lv.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ml.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="mr.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ms.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="nb.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="nl.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="pl.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ptBR.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ptPT.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ro.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ru.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="sk.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="sl.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="sr.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="sv.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="sw.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ta.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="te.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="th.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="tr.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="uk.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="ur.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="vi.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="zhCN.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="zhTW.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="README.txt"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="resources.pak"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="snapshot_blob.bin"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="v8_context_snapshot.bin"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="vk_swiftshader.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="vk_swiftshader_icd.json"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="vulkan1.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="CefSharp.BrowserSubprocess.Core.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="CefSharp.BrowserSubprocess.Core.pdb"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="CefSharp.BrowserSubprocess.exe"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="CefSharp.BrowserSubprocess.pdb"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="CefSharp.Core.Runtime.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="CefSharp.Core.Runtime.pdb"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="CefSharp.Core.Runtime.xml"/>
+  </COMPONENT>
+</DOCUMENT>

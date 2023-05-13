@@ -12,6 +12,11 @@
 
 [Version History](CHANGELOG.md)
 
+# Requrements
+Visual C++ Redistributable for Visual Studio 2015-2022 x64 (embedded in installer)
+
+.NET Framework 4.8
+
 # Introduction 
 Welcome to the Lyngdorf Amplifier Finder!
 
@@ -23,6 +28,8 @@ Happy listning! 🔈
 
 # How the code is working
 This code attempts to find the IP address of a Lyngdorf device on the local network using its MAC address. The MAC address is a unique identifier assigned to network interfaces, and it can be used to identify devices on the network.
+
+The MainForm_Load method checks if any command-line argument has been passed and, if so, tries to initialize the ChromiumWebBrowser with the specified IP address. If the IP address is not valid, it displays an error message and exits the application. If no argument is set, it initializes the browser by searching for the device on the network using the InitializeChromium method.
 
 The code first calls the FindIpFromMacAddress method of the IpMacMapper class, passing the MAC address of the Lyngdorf device as a parameter. This method returns the IP address associated with the specified MAC address, if any.
 
@@ -41,6 +48,10 @@ The code also sets up an event handler for the TitleChanged event of the Chromiu
 **Settings:**
 
 ![Screenshot](docs/lyngdorf-settings.jpg)
+
+To set the IP address for the device to connect to manuel if you need to connect to a specific:
+
+`.\LyngdorfBrowser.exe 192.168.1.200`
 
 ## How to build
 

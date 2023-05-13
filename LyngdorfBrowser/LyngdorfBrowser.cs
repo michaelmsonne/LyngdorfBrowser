@@ -96,7 +96,15 @@ namespace LyngdorfBrowser
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Cef.Shutdown();
+            try
+            {
+                Cef.Shutdown();
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+                throw;
+            }
         }
     }
 }
