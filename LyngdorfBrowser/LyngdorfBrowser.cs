@@ -36,16 +36,17 @@ namespace LyngdorfBrowser
                 }
                 else
                 {
+                    // If the IP address parsed it not in IP address format show it to the user and exit application
                     MessageBox.Show(@"Invalid IP address argument - try again", @"Error - not a valid IP address set in argument", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Environment.Exit(1);
                 }
             }
             else
             {
+                // If no arguments is set, find device on the network from MAC address (vendor)
                 InitializeChromium();
             }
         }
-
 
         private void Browser_TitleChanged(object sender, TitleChangedEventArgs e)
         {
@@ -68,6 +69,7 @@ namespace LyngdorfBrowser
         {
             try
             {
+                // If argument for IP address is null, find device on the network
                 if (ipAddress == null)
                 {
                     ipAddress = IpMacMapper.FindIpFromMacAddress("50-1e-2d");
@@ -78,6 +80,7 @@ namespace LyngdorfBrowser
                     }
                 }
 
+                // Set IP address for the browser for the device to use
                 _url = "http://" + ipAddress.Replace("\"", "");
                 _chromeBrowser = new ChromiumWebBrowser(_url);
                 Controls.Add(_chromeBrowser);
@@ -86,6 +89,7 @@ namespace LyngdorfBrowser
             }
             catch
             {
+                // If error somehow
                 MessageBox.Show(@"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool");
             }
         }
