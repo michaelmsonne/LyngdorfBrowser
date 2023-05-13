@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Windows.Forms;
 using CefSharp;
 using CefSharp.WinForms;
@@ -8,20 +9,43 @@ namespace LyngdorfBrowser
 {
     public partial class MainForm : Form
     {
-        private String _url = string.Empty;
+        private string _url = string.Empty;
         private ChromiumWebBrowser _chromeBrowser;
         public string OriginalText;
 
         public MainForm()
         {
             InitializeComponent();
-            InitializeChromium();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             OriginalText = Text; // Store the original form text in a variable
+
+            // Check arguments
+            string[] args = Environment.GetCommandLineArgs();
+            if (args.Length > 1)
+            {
+                // If an argument is used, try to use it as ip address for the device
+                string ipAddress = args[1];
+
+                // Validate the IP address
+                if (IPAddress.TryParse(ipAddress, out _))
+                {
+                    InitializeChromium(ipAddress);
+                }
+                else
+                {
+                    MessageBox.Show(@"Invalid IP address argument - try again", @"Error - not a valid IP address set in argument", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Environment.Exit(1);
+                }
+            }
+            else
+            {
+                InitializeChromium();
+            }
         }
+
 
         private void Browser_TitleChanged(object sender, TitleChangedEventArgs e)
         {
@@ -40,23 +64,25 @@ namespace LyngdorfBrowser
             }));
         }
 
-        public void InitializeChromium()
+        public void InitializeChromium(string ipAddress = null)
         {
             try
             {
-                string ipAddress = IpMacMapper.FindIpFromMacAddress("50-1e-2d");
                 if (ipAddress == null)
                 {
-                    MessageBox.Show(@"No Lyngdorf devices found on your network");
+                    ipAddress = IpMacMapper.FindIpFromMacAddress("50-1e-2d");
+                    if (ipAddress == null)
+                    {
+                        MessageBox.Show(@"No Lyngdorf devices found on your network");
+                        return;
+                    }
                 }
-                else
-                {
-                    _url = "http://" + ipAddress.Replace("\"", "");
-                    _chromeBrowser = new ChromiumWebBrowser(_url);
-                    Controls.Add(_chromeBrowser);
-                    _chromeBrowser.TitleChanged += Browser_TitleChanged;
-                    _chromeBrowser.Dock = DockStyle.Fill;
-                }
+
+                _url = "http://" + ipAddress.Replace("\"", "");
+                _chromeBrowser = new ChromiumWebBrowser(_url);
+                Controls.Add(_chromeBrowser);
+                _chromeBrowser.TitleChanged += Browser_TitleChanged;
+                _chromeBrowser.Dock = DockStyle.Fill;
             }
             catch
             {
