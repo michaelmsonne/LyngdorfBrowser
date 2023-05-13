@@ -14,6 +14,14 @@ namespace LyngdorfBrowser
         [STAThread]
         static void Main()
         {
+            var cacheFolderPath =
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    Application.ProductName + "\\Cache");
+            if (!Directory.Exists(cacheFolderPath))
+            {
+                Directory.CreateDirectory(cacheFolderPath);
+            }
+
             var settings = new CefSettings()
             {
                 //By default CefSharp will use an in-memory cache, you need to specify a Cache Folder to persist data
