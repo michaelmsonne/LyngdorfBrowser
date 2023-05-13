@@ -360,3 +360,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Advanced Installer Project/Advanced Installer Project-cache
+/Advanced Installer Project/Advanced Installer Project-SetupFiles
+/Advanced Installer Project/Prerequisites/Visual C++ Redistributable for Visual Studio 2015-2022
