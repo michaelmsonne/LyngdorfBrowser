@@ -75,8 +75,13 @@ namespace LyngdorfBrowser
                     ipAddress = IpMacMapper.FindIpFromMacAddress("50-1e-2d");
                     if (ipAddress == null)
                     {
-                        MessageBox.Show(@"No Lyngdorf devices found on your network");
-                        return;
+                        MessageBox.Show(@"No Lyngdorf devices found on your network.
+Try again or connect to your network with a cable.
+
+If this not works, use the commandline to connect to a specific IP address in this format:
+
+.\LyngdorfBrowser.exe 192.168.1.200", @"Can´s connect to device", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        Environment.Exit(1);
                     }
                 }
 
