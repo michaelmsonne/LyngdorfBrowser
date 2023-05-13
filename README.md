@@ -1,4 +1,4 @@
-# Lyngdorf Browser
+﻿# Lyngdorf Browser
 
 <p align="center">
   <a href="https://github.com/michaelmsonne/LyngdorfBrowser"><img src="https://img.shields.io/github/languages/top/michaelmsonne/LyngdorfBrowser.svg"></a>
@@ -15,11 +15,11 @@
 # Introduction 
 Welcome to the Lyngdorf Amplifier Finder!
 
-This project provides a small browser that enables you to find Lyngdorf amplifiers on your local network. The browser is built using C# WinForms and uses networking and web technologies to scan your network and identify any Lyngdorf Appfhiller web applications that may be running on your network.
+This project provides a small browser that enables you to find Lyngdorf amplifiers on your local network. The browser is built using C# WinForms and uses networking and web technologies to scan your network and identify any Lyngdorf amplifier web applications that may be running on your network.
 
-To get started, simply start the application and the browser will scan your local network for any Lyngdorf Appfhiller web applications and display them in the browser window. If a Lyngdorf amplifier is found, it will show up in the application!
+To get started, simply start the application and the browser will scan your local network for any Lyngdorf amplifier web applications and display them in the browser window. If a Lyngdorf amplifier is found, it will show up in the application!
 
-Happy browsing!
+Happy listning! 🔈
 
 # How the code is working
 This code attempts to find the IP address of a Lyngdorf device on the local network using its MAC address. The MAC address is a unique identifier assigned to network interfaces, and it can be used to identify devices on the network.
