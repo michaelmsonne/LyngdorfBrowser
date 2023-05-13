@@ -31,3 +31,11 @@ If an IP address is found, the code creates a new instance of the ChromiumWebBro
 If no IP address is found, the code displays a message box indicating that no Lyngdorf devices were found on the network. If an error occurs during the IP address lookup, the code displays a message box indicating that the operation failed and the device may not be supported.
 
 The code also sets up an event handler for the TitleChanged event of the ChromiumWebBrowser control. This event is triggered when the title of the browser window changes, which can happen when the user navigates to a different page or performs an action in the Lyngdorf web interface. The event handler updates the title of the main application window to reflect the title of the browser window, providing a more seamless browsing experience for the user.
+
+## How to build
+
+- Get [Visual Studio 2022](https://visualstudio.microsoft.com/vs/community/) (Community Edition is fine)
+- Install ".NET desktop development" workload  
+  ![dotnet-desktop-develoment.png](docs/dotnet-desktop-develoment.png)
+- Remember to select: Install .NET Framework 4.8 SDK
+- Build the solution in Visual Studio
