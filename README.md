@@ -1,3 +1,17 @@
+# Lyngdorf Browser
+
+<p align="center">
+  <a href="https://github.com/michaelmsonne/LyngdorfBrowser"><img src="https://img.shields.io/github/languages/top/michaelmsonne/LyngdorfBrowser.svg"></a>
+  <a href="https://github.com/michaelmsonne/LyngdorfBrowser"><img src="https://img.shields.io/github/languages/code-size/michaelmsonne/LyngdorfBrowser.svg"></a>
+  <a href="https://github.com/michaelmsonne/LyngdorfBrowser"><img src="https://img.shields.io/github/downloads/michaelmsonne/LyngdorfBrowser/total.svg"></a>
+</p>
+
+## Download
+
+[Download the latest version](../../releases/latest)
+
+[Version History](CHANGELOG.md)
+
 # Introduction 
 Welcome to the Lyngdorf Amplifier Finder!
 
