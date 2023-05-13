@@ -39,3 +39,9 @@ The code also sets up an event handler for the TitleChanged event of the Chromiu
   ![dotnet-desktop-develoment.png](docs/dotnet-desktop-develoment.png)
 - Remember to select: Install .NET Framework 4.8 SDK
 - Build the solution in Visual Studio
+
+# Sponsors
+## Advanced Installer
+The installer is created from a Free Advanced Installer License for Open-Source from <a href="https://www.advancedinstaller.com/" target="_blank">https://www.advancedinstaller.com/</a> - check it out!
+
+[<img src="https://cdn.advancedinstaller.com/svg/pressinfo/AiLogoColor.svg" title="Advanced Installer" alt="Advanced Instzaller" height="120"/>](https://www.advancedinstaller.com/)
