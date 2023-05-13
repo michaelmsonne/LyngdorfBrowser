@@ -60,7 +60,7 @@ namespace LyngdorfBrowser
             }
             catch
             {
-                MessageBox.Show(@"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this");
+                MessageBox.Show(@"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool");
             }
         }
 
