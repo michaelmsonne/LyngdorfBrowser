@@ -13,7 +13,7 @@
 [Version History](CHANGELOG.md)
 
 # Requrements
-Visual C++ Redistributable for Visual Studio 2015-2022 x64 (embedded in installer)
+Visual C++ Redistributable for Visual Studio 2015-2022 x64 (embedded in installer, but need to be installed for CefSharp)
 
 .NET Framework 4.8
 
