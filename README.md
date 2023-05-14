@@ -49,6 +49,10 @@ The code also sets up an event handler for the TitleChanged event of the Chromiu
 
 ![Screenshot](docs/lyngdorf-settings.jpg)
 
+**In use:**
+
+![Screenshot](docs/lyngdorf-application-in-use.jpg)
+
 To set the IP address for the device to connect to manuel if you need to connect to a specific:
 
 `.\LyngdorfBrowser.exe 192.168.1.200`
