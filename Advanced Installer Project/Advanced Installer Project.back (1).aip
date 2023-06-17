@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="20.6" version="20.7.1" PreviousModules="simple" Modules="professional" RootPath="." Language="en" Id="{5A781212-2739-4D47-A037-39A4668FEED5}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="20.6" version="20.6" PreviousModules="simple" Modules="professional" RootPath="." Language="en" Id="{5A781212-2739-4D47-A037-39A4668FEED5}">
   <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
     <ROW Name="HiddenItems" Value="ActSyncAppComponent;CPLAppletComponent;AppXAppDetailsComponent;FixupComponent;AppXCapabilitiesComponent;AppXDependenciesComponent;AppXProductDetailsComponent;AppXVisualAssetsComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
   </COMPONENT>
@@ -9,13 +9,13 @@
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.exe" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll" Value="..\packages\CefSharp.Common.114.2.100\CefSharp\x64"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll" Value="..\packages\CefSharp.Common.113.1.40\CefSharp\x64"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll_1" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.xml" Value="..\LyngdorfBrowser\bin\x64\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.dll" Value="..\packages\CefSharp.Common.114.2.100\lib\net452"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.WinForms.dll" Value="..\packages\CefSharp.WinForms.114.2.100\lib\net462"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.dll" Value="..\packages\CefSharp.Common.114.2.100\lib\net452"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.dll" Value="..\packages\CefSharp.Common.113.1.40\lib\net452"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.WinForms.dll" Value="..\packages\CefSharp.WinForms.113.1.40\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.dll" Value="..\packages\CefSharp.Common.113.1.40\lib\net452"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LICENSE.txt" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LyngdorfBrowser.exe" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_README.txt" Value="..\LyngdorfBrowser\bin\x64\Release"/>
@@ -177,7 +177,7 @@
     <ROW Property="ProductCode" Value="1033:{222A67A5-74BC-410B-A302-AB45F3E32E52} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Lyngdorf Browser"/>
-    <ROW Property="ProductVersion" Value="1.0.0.0" Options="24"/>
+    <ROW Property="ProductVersion" Value="1.0.0.0" Options="16"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{E2BF1EFF-C1F2-4347-8A26-4E2490FEBE01}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -399,7 +399,7 @@
     <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
-    <ROW TimeStampUrl="http://timestamp.sectigo.com" SignerDescription="[|ProductName]" SignOptions="7" SignTool="0" UseSha256="1" Thumbprint="d6a630b8f65c473c19f8b694491130073fccdb32 Subject: Michael Morten Sonne&#10;Issuer: Sectigo Public Code Signing CA R36&#10;Valid from 02/19/2023 to 05/19/2026" Subject="CN=Michael Morten Sonne, O=Michael Morten Sonne, S=Hovedstaden, C=DK" Store="User\MY"/>
+    <ROW TimeStampUrl="http://timestamp.sectigo.com" SignerDescription="[|ProductName]" SignOptions="7" SignTool="0" UseSha256="1" Thumbprint="d6a630b8f65c473c19f8b694491130073fccdb32 Subject: Michael Morten Sonne&#10;Issuer: Sectigo Public Code Signing CA R36&#10;Valid from 02/19/2023 to 05/19/2026&#10;User\MY" Subject="CN=Michael Morten Sonne, O=Michael Morten Sonne, S=Hovedstaden, C=DK"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DynamicPropertyComponent">
     <ROW Property="ProductVersion" Type="2" SourcePath="LyngdorfBrowser.exe"/>
