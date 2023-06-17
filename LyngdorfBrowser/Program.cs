@@ -14,21 +14,27 @@ namespace LyngdorfBrowser
         [STAThread]
         static void Main()
         {
+            // Set the cache folder path to a location within the user's LocalApplicationData folder
             var cacheFolderPath =
                 Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
                     Application.ProductName + "\\Cache");
+            // Create the cache folder if it doesn't exist
             if (!Directory.Exists(cacheFolderPath))
             {
                 Directory.CreateDirectory(cacheFolderPath);
             }
 
+            // Create CefSettings object and configure it
             var settings = new CefSettings()
             {
+                // Specify the cache folder path to persist data
                 //By default CefSharp will use an in-memory cache, you need to specify a Cache Folder to persist data
                 CachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), Application.ProductName + "\\Cache")
             };
 
+            // Disable logging severity
             settings.LogSeverity = LogSeverity.Disable;
+
             //Perform dependency check to make sure all relevant resources are in our output directory.
             Cef.Initialize(settings, performDependencyCheck: true, browserProcessHandler: null);
             
