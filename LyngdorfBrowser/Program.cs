@@ -18,26 +18,37 @@ namespace LyngdorfBrowser
             var cacheFolderPath =
                 Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
                     Application.ProductName + "\\Cache");
+
             // Create the cache folder if it doesn't exist
             if (!Directory.Exists(cacheFolderPath))
             {
-                Directory.CreateDirectory(cacheFolderPath);
+                // Try to create folder folder and perform error correction
+                try
+                {
+                    Directory.CreateDirectory(cacheFolderPath);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
             }
 
             // Create CefSettings object and configure it
             var settings = new CefSettings()
             {
                 // Specify the cache folder path to persist data
-                //By default CefSharp will use an in-memory cache, you need to specify a Cache Folder to persist data
+                // By default CefSharp will use an in-memory cache, you need to specify a Cache Folder to persist data
                 CachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), Application.ProductName + "\\Cache")
             };
 
             // Disable logging severity
             settings.LogSeverity = LogSeverity.Disable;
 
-            //Perform dependency check to make sure all relevant resources are in our output directory.
+            // Perform dependency check to make sure all relevant resources are in our output directory.
             Cef.Initialize(settings, performDependencyCheck: true, browserProcessHandler: null);
             
+            // Create a browser component
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
