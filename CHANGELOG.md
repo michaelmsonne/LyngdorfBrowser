@@ -1,4 +1,4 @@
-## [1.0.0.3] - xx-xx-2023
+## [1.0.0.3] - 24-10-2023
 Added:
   - Basic log function to the application
 
