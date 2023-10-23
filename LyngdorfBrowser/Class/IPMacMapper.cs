@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using static LyngdorfBrowser.Class.FileLogger;
 
 namespace LyngdorfBrowser.Class
 {
@@ -30,6 +31,10 @@ namespace LyngdorfBrowser.Class
         {
             if (_list != null)
                 return;
+
+            // Log the initialization message
+            Message("Initializing IP and MAC address data", EventType.Information, 1001);
+
             var arpStream = ExecuteCommandLine("arp", "-a");
             var result = new List<string>();
             while (!arpStream.EndOfStream)
@@ -50,6 +55,18 @@ namespace LyngdorfBrowser.Class
             // Part of MAC address
             InitializeGetIPsAndMac();
             var item = _list.SingleOrDefault(x => x.Mac.StartsWith(macAddress, StringComparison.OrdinalIgnoreCase));
+
+            if (item != null)
+            {
+                // Log the IP found message
+                Message($"IP address found for MAC address started with: {macAddress} - IP: {item.Ip}", EventType.Information, 1000);
+            }
+            else
+            {
+                // Log a message for MAC address not found
+                Message($"IP address not found for MAC address started with: {macAddress}", EventType.Error, 1001);
+            }
+
             return item?.Ip;
         }
 

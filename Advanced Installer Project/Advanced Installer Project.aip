@@ -177,7 +177,7 @@
     <ROW Property="ProductCode" Value="1033:{222A67A5-74BC-410B-A302-AB45F3E32E52} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Lyngdorf Browser"/>
-    <ROW Property="ProductVersion" Value="1.0.0.1" Options="24"/>
+    <ROW Property="ProductVersion" Value="1.0.0.3" Options="24"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{E2BF1EFF-C1F2-4347-8A26-4E2490FEBE01}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
