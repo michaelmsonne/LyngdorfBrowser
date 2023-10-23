@@ -1,5 +1,12 @@
 ## [1.0.0.1] - 17-6-2023
 - Update 3. party packets there is used by the application
+    - CefSharp.WinForms.116.0.230 -> 117.2.40
+    - CefSharp.Common.116.0.230 -> 117.2.40
+    - cef.redist.x86.116.0.23 -> 117.2.4
+    - cef.redist.x64.116.0.23 -> 117.2.4
+
+## [1.0.0.1] - 17-6-2023
+- Update 3. party packets there is used by the application
     - cef.redist from 113.1.4 to 114.2.10
     - CefSharp.Common from 113.1.40 to 114.2.100
     - CefSharp.WinForms from 113.1.40 to 114.2.100
