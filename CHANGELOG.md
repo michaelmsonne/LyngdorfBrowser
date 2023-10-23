@@ -1,9 +1,24 @@
-## [1.0.0.1] - 17-6-2023
+## [1.0.0.3] - xx-xx-2023
+Added:
+  - Basic log function to the application
+
+Updates:
+- Clode cleanup
 - Update 3. party packets there is used by the application
     - CefSharp.WinForms.116.0.230 -> 117.2.40
     - CefSharp.Common.116.0.230 -> 117.2.40
     - cef.redist.x86.116.0.23 -> 117.2.4
     - cef.redist.x64.116.0.23 -> 117.2.4
+
+## [1.0.0.2] - 28-09-2023
+Updates:
+- Updates to IpMacMapper class
+- Small changes to main code
+Update 3. party packets there is used by the application
+    - CefSharp.WinForms.114.2.100 -> CefSharp.WinForms.116.0.230
+    - CefSharp.Common.114.2.100 -> CefSharp.Common.116.0.230
+    - cef.redist.x86.114.2.10 -> cef.redist.x86.116.0.23
+    - cef.redist.x64.114.2.10 -> cef.redist.x64.116.0.23
 
 ## [1.0.0.1] - 17-6-2023
 - Update 3. party packets there is used by the application
