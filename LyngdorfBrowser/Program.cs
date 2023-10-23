@@ -3,7 +3,6 @@ using CefSharp;
 using System;
 using System.IO;
 using System.Windows.Forms;
-using LyngdorfBrowser.Class;
 using static LyngdorfBrowser.Class.FileLogger;
 
 namespace LyngdorfBrowser
@@ -22,6 +21,8 @@ namespace LyngdorfBrowser
             WriteOnlyErrorsToEventLog = false;
             WriteToEventLog = false;
             WriteToFile = true;
+
+            Message("Initialized log config", EventType.Information, 1000);
 
             // Set the cache folder path to a location within the user's LocalApplicationData folder
             var cacheFolderPath =
@@ -77,7 +78,10 @@ namespace LyngdorfBrowser
 
             // Perform dependency check to make sure all relevant resources are in our output directory.
             Cef.Initialize(settings, performDependencyCheck: true, browserProcessHandler: null);
-            
+            Message("Initialized Cef with settings: settings, performDependencyCheck: true, browserProcessHandler: null", EventType.Information, 1000);
+
+            Message("Initializing GUI", EventType.Information, 1000);
+
             // Create a browser component
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
