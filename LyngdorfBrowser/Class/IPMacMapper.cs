@@ -10,6 +10,11 @@ namespace LyngdorfBrowser.Class
     internal class IpMacMapper
     {
         private static List<IpAndMac> _list;
+        private class IpAndMac
+        {
+            public string Ip { get; set; }
+            public string Mac { get; set; }
+        }
 
         private static StreamReader ExecuteCommandLine(string file, string arguments = "")
         {
@@ -27,33 +32,49 @@ namespace LyngdorfBrowser.Class
             return process?.StandardOutput;
         }
 
+        private static List<IpAndMac> FetchIpAndMacList()
+        {
+            var arpStream = ExecuteCommandLine("arp", "-a");
+            if (arpStream == null) throw new InvalidOperationException("Failed to retrieve ARP data.");
+
+            var result = new List<IpAndMac>();
+            try
+            {
+                while (!arpStream.EndOfStream)
+                {
+                    var line = arpStream.ReadLine()?.Trim();
+                    if (!string.IsNullOrEmpty(line) && (line.Contains("dynamic") || line.Contains("static")))
+                    {
+                        var parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                        if (parts.Length >= 3)
+                        {
+                            result.Add(new IpAndMac { Ip = parts[0].Trim(), Mac = parts[1].Trim() });
+                        }
+                    }
+                }
+            }
+            finally
+            {
+                arpStream.Dispose(); // Ensure proper disposal
+            }
+
+            return result;
+        }
+
         private static void InitializeGetIPsAndMac()
         {
-            if (_list != null)
-                return;
-
-            // Log the initialization message
-            Message("Initializing IP and MAC address data", EventType.Information, 1001);
-
-            var arpStream = ExecuteCommandLine("arp", "-a");
-            var result = new List<string>();
-            while (!arpStream.EndOfStream)
+            if (_list == null)
             {
-                var line = arpStream.ReadLine()?.Trim();
-                result.Add(line);
+                // Log the initialization message
+                Message("Initializing IP and MAC address data", EventType.Information, 1001);
+                _list = FetchIpAndMacList();
             }
-            _list = result.Where(x => !string.IsNullOrEmpty(x) && (x.Contains("dynamic") || x.Contains("static")))
-                .Select(x =>
-                {
-                    var parts = x.Split(new[] { " " }, StringSplitOptions.RemoveEmptyEntries);
-                    return new IpAndMac { Ip = parts[0].Trim(), Mac = parts[1].Trim() };
-                }).ToList();
         }
 
         public static string FindIpFromMacAddress(string macAddress)
         {
-            // Part of MAC address
             InitializeGetIPsAndMac();
+
             var item = _list.SingleOrDefault(x => x.Mac.StartsWith(macAddress, StringComparison.OrdinalIgnoreCase));
 
             if (item != null)
@@ -68,12 +89,6 @@ namespace LyngdorfBrowser.Class
             }
 
             return item?.Ip;
-        }
-
-        private class IpAndMac
-        {
-            public string Ip { get; set; }
-            public string Mac { get; set; }
         }
     }
 }
