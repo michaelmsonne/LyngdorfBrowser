@@ -1,3 +1,12 @@
+## [1.0.0.4] - 24-10-2023
+Updates:
+- Clode cleanup/optimization
+- Update 3. party packets there is used by the application
+    - cef.redist.x64 from 117.2.4 to 119.1.2
+    - CefSharp.WinForms from 117.2.40 to 119.1.20
+    - cef.redist.x86 from 117.2.4 to 119.1.2
+    - CefSharp.Common from 117.2.40 to 119.1.20
+
 ## [1.0.0.3] - 24-10-2023
 Added:
   - Basic log function to the application

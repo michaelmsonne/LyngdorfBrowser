@@ -115,13 +115,6 @@ namespace LyngdorfBrowser
                 // Resume the timer
                 _connectionTimer.Start();
             }
-
-            // Simulate the title change event
-            //Text = $@"{OriginalText}: {TitleText} - Status: " + StatusText;
-
-            // string newTitle = $@"{OriginalText}: {TitleText} - Status: " + StatusText;
-            // TitleChangedEventArgs args = new TitleChangedEventArgs(_chromeBrowser.GetBrowser(), newTitle);
-            // Browser_TitleChanged(_chromeBrowser, args);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
