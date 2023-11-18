@@ -1,4 +1,4 @@
-## [1.0.0.4] - 24-10-2023
+## [1.0.0.4] - 18-11-2023
 Updates:
 - Clode cleanup/optimization
 - Update 3. party packets there is used by the application
