@@ -15,8 +15,8 @@ updates:
         #   versions:
         #   - "> 2.1.2"
         # Keep our GitHub actions up to date.
-      - package-ecosystem: "github-actions"
-        directory: "/"
-        schedule:
-          # Every weekday
-          interval: "daily"
+      #- package-ecosystem: "github-actions"
+      #  directory: "/"
+      #  schedule:
+      #    # Every weekday
+      #    interval: "daily"
