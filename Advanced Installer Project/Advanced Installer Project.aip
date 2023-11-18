@@ -9,13 +9,13 @@
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.exe" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll" Value="..\packages\CefSharp.Common.117.2.40\CefSharp\x64"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll" Value="..\packages\CefSharp.Common.119.1.20\CefSharp\x64"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll_1" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.xml" Value="..\LyngdorfBrowser\bin\x64\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.dll" Value="..\packages\CefSharp.Common.117.2.40\lib\net462"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.WinForms.dll" Value="..\packages\CefSharp.WinForms.117.2.40\lib\net462"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.dll" Value="..\packages\CefSharp.Common.117.2.40\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.dll" Value="..\packages\CefSharp.Common.119.1.20\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.WinForms.dll" Value="..\packages\CefSharp.WinForms.119.1.20\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.dll" Value="..\packages\CefSharp.Common.119.1.20\lib\net462"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LICENSE.txt" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LyngdorfBrowser.exe" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_README.txt" Value="..\LyngdorfBrowser\bin\x64\Release"/>
