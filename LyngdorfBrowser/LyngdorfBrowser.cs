@@ -199,7 +199,7 @@ If this not works, use the commandline to connect to a specific IP address in th
             catch
             {
                 // If error somehow
-                MessageBox.Show(@"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool");
+                MessageBox.Show(@"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool. IP: "+ ipAddress);
 
                 Message("Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool", EventType.Error, 1001);
             }
