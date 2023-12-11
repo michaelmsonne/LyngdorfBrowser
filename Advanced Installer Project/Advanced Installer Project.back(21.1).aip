@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="20.6" version="21.2.2" PreviousModules="simple" Modules="professional" RootPath="." Language="en" Id="{5A781212-2739-4D47-A037-39A4668FEED5}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="20.6" version="21.1" PreviousModules="simple" Modules="professional" RootPath="." Language="en" Id="{5A781212-2739-4D47-A037-39A4668FEED5}">
   <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
     <ROW Name="HiddenItems" Value="ActSyncAppComponent;CPLAppletComponent;AppXAppDetailsComponent;FixupComponent;AppXCapabilitiesComponent;AppXDependenciesComponent;AppXProductDetailsComponent;AppXVisualAssetsComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
   </COMPONENT>
@@ -9,13 +9,13 @@
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.exe" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll" Value="..\packages\CefSharp.Common.119.4.30\CefSharp\x64"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll" Value="..\packages\CefSharp.Common.119.1.20\CefSharp\x64"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll_1" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.xml" Value="..\LyngdorfBrowser\bin\x64\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.dll" Value="..\packages\CefSharp.Common.119.4.30\lib\net462"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.WinForms.dll" Value="..\packages\CefSharp.WinForms.119.4.30\lib\net462"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.dll" Value="..\packages\CefSharp.Common.119.4.30\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.dll" Value="..\packages\CefSharp.Common.119.1.20\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.WinForms.dll" Value="..\packages\CefSharp.WinForms.119.1.20\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.dll" Value="..\packages\CefSharp.Common.119.1.20\lib\net462"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LICENSE.txt" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LyngdorfBrowser.exe" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_README.txt" Value="..\LyngdorfBrowser\bin\x64\Release"/>
@@ -177,7 +177,7 @@
     <ROW Property="ProductCode" Value="1033:{222A67A5-74BC-410B-A302-AB45F3E32E52} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Lyngdorf Browser"/>
-    <ROW Property="ProductVersion" Value="1.0.0.4" Options="24"/>
+    <ROW Property="ProductVersion" Value="1.0.0.3" Options="24"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{E2BF1EFF-C1F2-4347-8A26-4E2490FEBE01}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -397,7 +397,6 @@
     <ROW Action="AI_InstallPrePrerequisite" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="649"/>
     <ROW Action="AI_VerifyPrePrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="651"/>
     <ROW Action="AI_CleanPrePrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="652"/>
-    <ROW Action="AI_AppSearchEx" Condition="AI_BOOTSTRAPPER" Sequence="251"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
     <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFileName="[|ProductName] v. [|ProductVersion] installer" Languages="en" InstallationType="4" UseLargeSchema="true" MsiPackageType="x64"/>
