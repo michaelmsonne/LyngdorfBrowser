@@ -35,30 +35,33 @@ namespace LyngdorfBrowser.Class
         private static List<IpAndMac> FetchIpAndMacList()
         {
             var arpStream = ExecuteCommandLine("arp", "-a");
-            if (arpStream == null) throw new InvalidOperationException("Failed to retrieve ARP data.");
-
-            var result = new List<IpAndMac>();
-            try
+            if (arpStream != null)
             {
-                while (!arpStream.EndOfStream)
+                var result = new List<IpAndMac>();
+                try
                 {
-                    var line = arpStream.ReadLine()?.Trim();
-                    if (!string.IsNullOrEmpty(line) && (line.Contains("dynamic") || line.Contains("static")))
+                    while (!arpStream.EndOfStream)
                     {
-                        var parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                        if (parts.Length >= 3)
+                        var line = arpStream.ReadLine()?.Trim();
+                        if (!string.IsNullOrEmpty(line) && (line.Contains("dynamic") || line.Contains("static")))
                         {
-                            result.Add(new IpAndMac { Ip = parts[0].Trim(), Mac = parts[1].Trim() });
+                            var parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                            if (parts.Length >= 3)
+                            {
+                                result.Add(new IpAndMac { Ip = parts[0].Trim(), Mac = parts[1].Trim() });
+                            }
                         }
                     }
                 }
-            }
-            finally
-            {
-                arpStream.Dispose(); // Ensure proper disposal
+                finally
+                {
+                    arpStream.Dispose(); // Ensure proper disposal
+                }
+
+                return result;
             }
 
-            return result;
+            throw new InvalidOperationException("Failed to retrieve ARP data.");
         }
 
         private static void InitializeGetIPsAndMac()
