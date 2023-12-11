@@ -1,3 +1,13 @@
+## [1.0.0.5] - 11-12-2023
+Updates:
+- Clode cleanup/optimization
+- Add error check for IPMacMapper class
+- Update 3. party packets there is used by the application
+    - cef.redist.x64 version 119.1.2 to 119.4.3
+    - cef.redist.x86 version 119.1.2 to 119.4.3
+    - CefSharp.Common version 119.1.20 to 119.4.30
+    - CefSharp.WinForms version 119.1.20 to 119.4.30
+
 ## [1.0.0.4] - 18-11-2023
 Updates:
 - Clode cleanup/optimization
