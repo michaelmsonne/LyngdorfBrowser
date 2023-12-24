@@ -177,7 +177,7 @@
     <ROW Property="ProductCode" Value="1033:{222A67A5-74BC-410B-A302-AB45F3E32E52} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Lyngdorf Browser"/>
-    <ROW Property="ProductVersion" Value="1.0.0.5" Options="24"/>
+    <ROW Property="ProductVersion" Value="1.0.0.6" Options="24"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{E2BF1EFF-C1F2-4347-8A26-4E2490FEBE01}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -273,15 +273,11 @@
     <ROW File="CefSharp.BrowserSubprocess.Core.pdb" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~6.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb&gt;" SelfReg="false"/>
     <ROW File="CefSharp.BrowserSubprocess.exe" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.exe&gt;" SelfReg="false" DigSign="true"/>
     <ROW File="CefSharp.BrowserSubprocess.pdb" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~1.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.pdb&gt;" SelfReg="false"/>
-    <ROW File="CefSharp.Core.dll" Component_="LyngdorfBrowser_References" FileName="CEFSHA~5.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.dll&gt;" SelfReg="false"/>
     <ROW File="CefSharp.Core.pdb" Component_="LyngdorfBrowser_References" FileName="CEFSHA~3.PDB|CefSharp.Core.pdb" Attributes="0" SourcePath="..\LyngdorfBrowser\bin\x64\Release\CefSharp.Core.pdb" SelfReg="false"/>
-    <ROW File="CefSharp.Core.Runtime.dll" Component_="LyngdorfBrowser_References" FileName="CEFSHA~4.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.dll&gt;" SelfReg="false"/>
     <ROW File="CefSharp.Core.Runtime.pdb" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.pdb&gt;" SelfReg="false"/>
     <ROW File="CefSharp.Core.Runtime.xml" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~4.XML|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.xml]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.xml&gt;" SelfReg="false"/>
     <ROW File="CefSharp.Core.xml" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~2.XML|CefSharp.Core.xml" Attributes="0" SourcePath="..\LyngdorfBrowser\bin\x64\Release\CefSharp.Core.xml" SelfReg="false"/>
-    <ROW File="CefSharp.dll" Component_="LyngdorfBrowser_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.dll&gt;" SelfReg="false"/>
     <ROW File="CefSharp.pdb" Component_="CefSharp.dll" FileName="CefSharp.pdb" Attributes="0" SourcePath="..\LyngdorfBrowser\bin\x64\Release\CefSharp.pdb" SelfReg="false"/>
-    <ROW File="CefSharp.WinForms.dll" Component_="LyngdorfBrowser_References" FileName="CEFSHA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.WinForms.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.WinForms.dll&gt;" SelfReg="false"/>
     <ROW File="CefSharp.WinForms.pdb" Component_="CefSharp.WinForms.dll" FileName="CEFSHA~5.PDB|CefSharp.WinForms.pdb" Attributes="0" SourcePath="..\LyngdorfBrowser\bin\x64\Release\CefSharp.WinForms.pdb" SelfReg="false"/>
     <ROW File="CefSharp.WinForms.xml" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~3.XML|CefSharp.WinForms.xml" Attributes="0" SourcePath="..\LyngdorfBrowser\bin\x64\Release\CefSharp.WinForms.xml" SelfReg="false"/>
     <ROW File="CefSharp.xml" Component_="LyngdorfBrowser_ContentOutput" FileName="CefSharp.xml" Attributes="0" SourcePath="..\LyngdorfBrowser\bin\x64\Release\CefSharp.xml" SelfReg="false"/>
@@ -301,7 +297,11 @@
     <ROW File="vk_swiftshader.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="VK_SWI~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_vk_swiftshader.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_vk_swiftshader.dll&gt;" SelfReg="false"/>
     <ROW File="vk_swiftshader_icd.json" Component_="LyngdorfBrowser_ContentOutput" FileName="VK_SWI~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_vk_swiftshader_icd.json]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_vk_swiftshader_icd.json&gt;" SelfReg="false"/>
     <ROW File="vulkan1.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_vulkan1.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_vulkan1.dll&gt;" SelfReg="false"/>
-    <ROW File="CefSharp.Core.Runtime.dll_1" Component_="LyngdorfBrowser_ContentOutput" FileName="CEFSHA~1.DLL|CefSharp.Core.Runtime.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.dll_1&gt;" SelfReg="false"/>
+    <ROW File="CefSharp.Core.Runtime.dll_1" Component_="LyngdorfBrowser_References" FileName="CEFSHA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.Runtime.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.dll_1&gt;" SelfReg="false"/>
+    <ROW File="CefSharp.Core.dll" Component_="LyngdorfBrowser_References" FileName="CEFSHA~4.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.Core.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.dll&gt;" SelfReg="false"/>
+    <ROW File="CefSharp.dll" Component_="LyngdorfBrowser_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.dll&gt;" SelfReg="false"/>
+    <ROW File="CefSharp.WinForms.dll" Component_="LyngdorfBrowser_References" FileName="CEFSHA~5.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.WinForms.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.WinForms.dll&gt;" SelfReg="false"/>
+    <ROW File="CefSharp.Core.Runtime.dll" Component_="LyngdorfBrowser_References" FileName="CEFSHA~1.DLL|CefSharp.Core.Runtime.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.dll&gt;" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
     <ROW Name="AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.Core.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.Core.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.Core.dll]" Type="2" Content="0"/>
@@ -632,10 +632,6 @@
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="vi.pak_1"/>
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="zhCN.pak_1"/>
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="zhTW.pak_1"/>
-    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="References" OutputFile="CefSharp.Core.dll"/>
-    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="References" OutputFile="CefSharp.dll"/>
-    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="References" OutputFile="CefSharp.WinForms.dll"/>
-    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="References" OutputFile="CefSharp.Core.Runtime.dll"/>
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="chrome_100_percent.pak"/>
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="chrome_200_percent.pak"/>
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="chrome_elf.dll"/>
@@ -659,5 +655,9 @@
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="CefSharp.Core.Runtime.dll_1"/>
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="CefSharp.Core.Runtime.pdb"/>
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="CefSharp.Core.Runtime.xml"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="References" OutputFile="CefSharp.Core.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="References" OutputFile="CefSharp.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="References" OutputFile="CefSharp.WinForms.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="References" OutputFile="CefSharp.Core.Runtime.dll"/>
   </COMPONENT>
 </DOCUMENT>
