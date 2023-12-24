@@ -195,12 +195,12 @@ If this not works, use the commandline to connect to a specific IP address in th
                 _chromeBrowser.TitleChanged += Browser_TitleChanged;
                 _chromeBrowser.Dock = DockStyle.Fill;
             }
-            catch
+            catch (Exception ex)
             {
                 // If error somehow
-                MessageBox.Show(@"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool. IP: "+ ipAddress);
+                MessageBox.Show(@"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool. IP: "+ ipAddress + Environment.NewLine + @"Error: " + ex);
 
-                Message("Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool", EventType.Error, 1001);
+                Message("Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool. Error: " + ex, EventType.Error, 1001);
             }
         }
 
