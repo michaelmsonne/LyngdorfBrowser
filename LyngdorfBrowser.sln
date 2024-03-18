@@ -32,7 +32,6 @@ Global
 		{07AAFEFA-ACDE-449F-8957-09B5D123A20D}.DefaultBuild|x64.ActiveCfg = DefaultBuild
 		{07AAFEFA-ACDE-449F-8957-09B5D123A20D}.DefaultBuild|x64.Build.0 = DefaultBuild
 		{07AAFEFA-ACDE-449F-8957-09B5D123A20D}.Release|x64.ActiveCfg = DefaultBuild
-		{07AAFEFA-ACDE-449F-8957-09B5D123A20D}.Release|x64.Build.0 = DefaultBuild
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
