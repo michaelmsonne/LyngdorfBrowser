@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="20.6" version="21.2.2" PreviousModules="simple" Modules="professional" RootPath="." Language="en" Id="{5A781212-2739-4D47-A037-39A4668FEED5}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="20.6" version="21.5" PreviousModules="simple" Modules="professional" RootPath="." Language="en" Id="{5A781212-2739-4D47-A037-39A4668FEED5}">
   <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
     <ROW Name="HiddenItems" Value="ActSyncAppComponent;CPLAppletComponent;AppXAppDetailsComponent;FixupComponent;AppXCapabilitiesComponent;AppXDependenciesComponent;AppXProductDetailsComponent;AppXVisualAssetsComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
   </COMPONENT>
@@ -9,13 +9,13 @@
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.Core.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.exe" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll" Value="..\packages\CefSharp.Common.119.4.30\CefSharp\x64"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll" Value="..\packages\CefSharp.Common.122.1.120\CefSharp\x64"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.dll_1" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.pdb" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.Runtime.xml" Value="..\LyngdorfBrowser\bin\x64\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.dll" Value="..\packages\CefSharp.Common.119.4.30\lib\net462"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.WinForms.dll" Value="..\packages\CefSharp.WinForms.119.4.30\lib\net462"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.dll" Value="..\packages\CefSharp.Common.119.4.30\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.Core.dll" Value="..\packages\CefSharp.Common.122.1.120\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.WinForms.dll" Value="..\packages\CefSharp.WinForms.122.1.120\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_CefSharp.dll" Value="..\packages\CefSharp.Common.122.1.120\lib\net462"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LICENSE.txt" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LyngdorfBrowser.exe" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_README.txt" Value="..\LyngdorfBrowser\bin\x64\Release"/>
@@ -32,6 +32,8 @@
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_d3dcompiler_47.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_da.pak_1" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_de.pak_1" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_dxcompiler.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_dxil.dll" Value="..\LyngdorfBrowser\bin\x64\Release"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_el.pak_1" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_enGB.pak_1" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_enUS.pak_1" Value="..\LyngdorfBrowser\bin\x64\Release\locales"/>
@@ -115,6 +117,8 @@
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_d3dcompiler_47.dll" Value="d3dcompiler_47.dll"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_da.pak_1" Value="da.pak"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_de.pak_1" Value="de.pak"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_dxcompiler.dll" Value="dxcompiler.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_dxil.dll" Value="dxil.dll"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_el.pak_1" Value="el.pak"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_enGB.pak_1" Value="en-GB.pak"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_enUS.pak_1" Value="en-US.pak"/>
@@ -188,6 +192,8 @@
     <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
@@ -206,6 +212,7 @@
     <ROW Component="LyngdorfBrowser_References" ComponentId="{43BD82CA-2504-4A82-8F1C-A972144A5EA7}" Directory_="APPDIR" Attributes="0" KeyPath="CefSharp.Core.Runtime.dll"/>
     <ROW Component="ProductInformation" ComponentId="{9BA6131E-8CC0-4A05-906F-D7E7450AAB41}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
     <ROW Component="SHORTCUTDIR" ComponentId="{358FDE07-409B-44CE-8F4F-81605B460FE8}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="dxil.dll" ComponentId="{63D5405B-A6B8-45F7-895F-020FA475E60F}" Directory_="APPDIR" Attributes="256" KeyPath="dxil.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="C4FE6FD5B7C4D07B3A313E754A9A6A8" Title="Visual C++ Redistributable for Visual Studio 2015-2022 x64" Description="Visual C++ Redistributable for Visual Studio 2015-2022 x64" Display="3" Level="1" Attributes="0"/>
@@ -302,6 +309,8 @@
     <ROW File="CefSharp.dll" Component_="LyngdorfBrowser_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.dll&gt;" SelfReg="false"/>
     <ROW File="CefSharp.WinForms.dll" Component_="LyngdorfBrowser_References" FileName="CEFSHA~5.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.WinForms.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.WinForms.dll&gt;" SelfReg="false"/>
     <ROW File="CefSharp.Core.Runtime.dll" Component_="LyngdorfBrowser_References" FileName="CEFSHA~1.DLL|CefSharp.Core.Runtime.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_CefSharp.Core.Runtime.dll&gt;" SelfReg="false"/>
+    <ROW File="dxcompiler.dll" Component_="LyngdorfBrowser_ContentOutput" FileName="DXCOMP~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_dxcompiler.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_dxcompiler.dll&gt;" SelfReg="false"/>
+    <ROW File="dxil.dll" Component_="dxil.dll" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_dxil.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_dxil.dll&gt;" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
     <ROW Name="AI_APPPATH_PERBUILD_CefSharp.BrowserSubprocess.Core.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_CefSharp.BrowserSubprocess.Core.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_CefSharp.BrowserSubprocess.Core.dll]" Type="2" Content="0"/>
@@ -331,6 +340,8 @@
     <ROW Name="AI_APPPATH_PERBUILD_d3dcompiler_47.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_d3dcompiler_47.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_d3dcompiler_47.dll]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_da.pak_1" Path="[|AI_PROPPATH_DIR_PERBUILD_da.pak_1]\[|AI_PROPPATH_FILENAME_PERBUILD_da.pak_1]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_de.pak_1" Path="[|AI_PROPPATH_DIR_PERBUILD_de.pak_1]\[|AI_PROPPATH_FILENAME_PERBUILD_de.pak_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_dxcompiler.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_dxcompiler.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_dxcompiler.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_dxil.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_dxil.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_dxil.dll]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_el.pak_1" Path="[|AI_PROPPATH_DIR_PERBUILD_el.pak_1]\[|AI_PROPPATH_FILENAME_PERBUILD_el.pak_1]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_enGB.pak_1" Path="[|AI_PROPPATH_DIR_PERBUILD_enGB.pak_1]\[|AI_PROPPATH_FILENAME_PERBUILD_enGB.pak_1]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_enUS.pak_1" Path="[|AI_PROPPATH_DIR_PERBUILD_enUS.pak_1]\[|AI_PROPPATH_FILENAME_PERBUILD_enUS.pak_1]" Type="2" Content="0"/>
@@ -397,7 +408,9 @@
     <ROW Action="AI_InstallPrePrerequisite" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="649"/>
     <ROW Action="AI_VerifyPrePrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="651"/>
     <ROW Action="AI_CleanPrePrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="652"/>
-    <ROW Action="AI_AppSearchEx" Condition="AI_BOOTSTRAPPER" Sequence="251"/>
+    <ROW Action="AI_AppSearchEx" Condition="AI_BOOTSTRAPPER" Sequence="252"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="249"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="251"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
     <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFileName="[|ProductName] v. [|ProductVersion] installer" Languages="en" InstallationType="4" UseLargeSchema="true" MsiPackageType="x64"/>
@@ -428,7 +441,10 @@
     <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
     <ROW Action="AI_DownloadPrereq" Description="Downloading prerequisite software" DescriptionLocId="ActionText.Description.AI_DownloadPrereq" Template="[1]" TemplateLocId="ActionText.Template.AI_DownloadPrereq"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
     <ROW Action="AI_ExtractPrereq" Description="Extracting prerequisite software" DescriptionLocId="ActionText.Description.AI_ExtractPrereq" Template="[1]" TemplateLocId="ActionText.Template.AI_ExtractPrereq"/>
     <ROW Action="AI_InstallPostPrerequisite" Description="Installing prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="[1]" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
     <ROW Action="AI_InstallPrePrerequisite" Description="Installing prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="[1]" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
@@ -440,6 +456,7 @@
     <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
     <ROW Name="file_deleter.ps1" SourcePath="&lt;AI_SCRIPTS&gt;file_deleter.ps1"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
     <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
@@ -478,19 +495,28 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
     <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
     <ROW Action="AI_CleanPrePrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
     <ROW Action="AI_CleanPrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
     <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
     <ROW Action="AI_DownloadPrereq" Type="1" Source="Prereq.dll" Target="DownloadPrereq"/>
     <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
     <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
     <ROW Action="AI_ExtractPrereq" Type="65" Source="Prereq.dll" Target="ExtractPrereq"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
     <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
     <ROW Action="AI_InstallPostPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPostPrereq"/>
     <ROW Action="AI_InstallPrePrerequisite" Type="65" Source="Prereq.dll" Target="InstallPrePrereq"/>
     <ROW Action="AI_InstallPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPrereq"/>
     <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
     <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
     <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
     <ROW Action="AI_RollbackPrePrereq" Type="65" Source="Prereq.dll" Target="RollbackPrePrereq" WithoutSeq="true"/>
@@ -513,6 +539,7 @@
     <ROW Feature_="MainFeature" Component_="CefSharp.dll"/>
     <ROW Feature_="MainFeature" Component_="CefSharp.WinForms.dll"/>
     <ROW Feature_="C4FE6FD5B7C4D07B3A313E754A9A6A8" Component_="C4FE6FD5B7C4D07B3A313E754A9A6A8"/>
+    <ROW Feature_="MainFeature" Component_="dxil.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -522,7 +549,16 @@
     <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
     <ROW Action="AI_VerifyPrereq" Sequence="1101"/>
-    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+    <ROW Action="AI_AppSearchEx" Sequence="102"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
@@ -535,13 +571,16 @@
     <ROW Action="AI_InstallPrerequisite" Sequence="1298"/>
     <ROW Action="AI_InstallPostPrerequisite" Sequence="1301"/>
     <ROW Action="AI_CleanPrereq" Sequence="1302"/>
-    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+    <ROW Action="AI_AppSearchEx" Sequence="102"/>
     <ROW Action="AI_InstallPrePrerequisite" Condition="Installed" Sequence="1299"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
     <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
@@ -569,7 +608,7 @@
     <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
-    <ROW PrereqKey="C4FE6FD5B7C4D07B3A313E754A9A6A8" DisplayName="Visual C++ Redistributable for Visual Studio 2015-2022 x64" VersionMin="14.30" SetupFileUrl="Prerequisites\Visual C++ Redistributable for Visual Studio 2015-2022\VC_redist.x64.exe" Location="0" ExactSize="0" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" WinNT64Versions="Windows Vista RTM x64, Windows Vista SP1 x64, Windows Server 2008 RTM x64, Windows 7 RTM x64, Windows Server 2008 R2 RTM x64" Operator="1" NoUiComLine="/q /norestart" Options="xfqQ" TargetName="Visual C++ Redistributable for Visual Studio 2015-2022\VC_redist.x64.exe" Feature="C4FE6FD5B7C4D07B3A313E754A9A6A8"/>
+    <ROW PrereqKey="C4FE6FD5B7C4D07B3A313E754A9A6A8" DisplayName="Visual C++ Redistributable for Visual Studio 2015-2022 x64" VersionMin="14.30" SetupFileUrl="Prerequisites\Visual C++ Redistributable for Visual Studio 2015-2022\VC_redist.x64.exe" Location="0" ExactSize="0" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" WinNT64Versions="Windows 7 RTM x64, Windows Server 2008 R2 RTM x64" Operator="1" NoUiComLine="/q /norestart" Options="xfqQ" TargetName="Visual C++ Redistributable for Visual Studio 2015-2022\VC_redist.x64.exe" Feature="C4FE6FD5B7C4D07B3A313E754A9A6A8"/>
     <ATTRIBUTE name="PrereqsOrder" value="C4FE6FD5B7C4D07B3A313E754A9A6A8"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
@@ -659,5 +698,7 @@
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="References" OutputFile="CefSharp.dll"/>
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="References" OutputFile="CefSharp.WinForms.dll"/>
     <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="References" OutputFile="CefSharp.Core.Runtime.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="dxcompiler.dll"/>
+    <ROW ProjectId="{7612e05a-90f3-4cc4-b498-e6a1ffa61326}" ProjectName="LyngdorfBrowser" OutputGroup="ContentOutput" OutputFile="dxil.dll"/>
   </COMPONENT>
 </DOCUMENT>
