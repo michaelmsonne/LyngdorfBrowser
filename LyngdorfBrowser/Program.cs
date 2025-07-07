@@ -15,7 +15,7 @@ namespace LyngdorfBrowser
         [STAThread]
         static void Main()
         {
-            // Set Global Logfile properties for log
+            // Set global logfile properties for log
             DateFormat = "dd-MM-yyyy";
             DateTimeFormat = "dd-MM-yyyy HH:mm:ss";
             WriteOnlyErrorsToEventLog = false;
@@ -24,53 +24,21 @@ namespace LyngdorfBrowser
 
             Message("Initialized log config", EventType.Information, 1000);
 
-            // Set the cache folder path to a location within the user's LocalApplicationData folder
-            var cacheFolderPath =
-                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                    Application.ProductName + "\\Cache");
+            // Set and reuse the cache folder path
+            var cacheFolderPath = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                Application.ProductName + "\\Cache"
+            );
 
-            // Create the cache folder if it doesn't exist
-            if (!Directory.Exists(cacheFolderPath))
+            // Ensure cache folder exists, handle errors and exit early if needed
+            if (!EnsureCacheFolderExists(cacheFolderPath))
+                return;
+
+            // Create and configure CefSettings
+            var settings = new CefSettings
             {
-                // Try to create folder and perform error correction
-                try
-                {
-                    Directory.CreateDirectory(cacheFolderPath);
-                    Message("Created cache folder '" + cacheFolderPath + "'.", EventType.Information, 1000);
-                }
-                catch (UnauthorizedAccessException)
-                {
-                    // Show error message in gui and console and exit application
-                    MessageBox.Show(@"Unable to create downloaded cache folder: '" + cacheFolderPath + @"'. Make sure the account you use to run this tool has write rights to this location - exiting...", @"Error when creating cache folder", MessageBoxButtons.OK);
-                    
-                    // Write error message to console and log file
-                    Console.WriteLine(@"Unable to create downloaded cache folder: '" + cacheFolderPath + @"'. Make sure the account you use to run this tool has write rights to this location.");
-                    Message("Unable to create downloaded cache folder: '" + cacheFolderPath + @"'. Make sure the account you use to run this tool has write rights to this location.", EventType.Error, 1001);
-
-                    // Exit application
-                    Application.Exit();
-                }
-                catch (Exception e)
-                {
-                    // Log unknown error message to console and log file
-                    Console.WriteLine(e);
-
-                    Message("Error when trying to create downloaded cache folder: '" + cacheFolderPath + @"' - Error: " + e, EventType.Error, 1001);
-
-                    throw;
-                }
-            }
-            else
-            {
-                Message("Cache folder '" + cacheFolderPath + "' exists.", EventType.Information, 1000);
-            }
-
-            // Create CefSettings object and configure it
-            var settings = new CefSettings()
-            {
-                // Specify the cache folder path to persist data
-                CachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), Application.ProductName + "\\Cache"),
-                LogSeverity = LogSeverity.Default // Set this here, before Cef.Initialize
+                CachePath = cacheFolderPath,
+                LogSeverity = LogSeverity.Default
             };
 
             try
@@ -82,15 +50,51 @@ namespace LyngdorfBrowser
             {
                 Message("CefSharp FileLoadException: " + ex.Message + " - " + ex.FusionLog, EventType.Error, 1002);
                 MessageBox.Show(@"CefSharp failed to load: " + ex.Message, @"CefSharp Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
+                return;
             }
 
             Message("Initializing GUI", EventType.Information, 1000);
 
-            // Create a browser component
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+        }
+
+        /// <summary>
+        /// Ensures the cache folder exists. Handles errors and logs as needed.
+        /// Returns false if the application should exit.
+        /// </summary>
+        private static bool EnsureCacheFolderExists(string cacheFolderPath)
+        {
+            if (!Directory.Exists(cacheFolderPath))
+            {
+                try
+                {
+                    Directory.CreateDirectory(cacheFolderPath);
+                    Message($"Created cache folder '{cacheFolderPath}'.", EventType.Information, 1000);
+                }
+                catch (UnauthorizedAccessException)
+                {
+                    MessageBox.Show(
+                        $@"Unable to create downloaded cache folder: '{cacheFolderPath}'. Make sure the account you use to run this tool has write rights to this location - exiting...",
+                        @"Error when creating cache folder", MessageBoxButtons.OK
+                    );
+                    Console.WriteLine($@"Unable to create downloaded cache folder: '{cacheFolderPath}'. Make sure the account you use to run this tool has write rights to this location.");
+                    Message($@"Unable to create downloaded cache folder: '{cacheFolderPath}'. Make sure the account you use to run this tool has write rights to this location.", EventType.Error, 1001);
+                    return false;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    Message($@"Error when trying to create downloaded cache folder: '{cacheFolderPath}' - Error: {e}", EventType.Error, 1001);
+                    throw;
+                }
+            }
+            else
+            {
+                Message($"Cache folder '{cacheFolderPath}' exists.", EventType.Information, 1000);
+            }
+            return true;
         }
     }
 }
