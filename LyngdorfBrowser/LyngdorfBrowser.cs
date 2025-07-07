@@ -63,8 +63,9 @@ namespace LyngdorfBrowser
             {
                 _connectionTimer.Start();
             }
-
+#if DEBUG
             Message($"Connection check result: {StatusText}", EventType.Information, 1000);
+#endif
         }
 
         private void ShowStatusMessage(string message, MessageBoxIcon icon, EventType eventType, string title)
