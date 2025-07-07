@@ -108,6 +108,7 @@
   <ItemGroup>
     <Compile Include="Class\FileLogger.cs" />
     <Compile Include="Class\Files.cs" />
+    <Compile Include="Class\Globals.cs" />
     <Compile Include="LyngdorfBrowser.cs">
       <SubType>Form</SubType>
     </Compile>

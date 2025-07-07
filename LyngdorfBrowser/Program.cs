@@ -3,6 +3,7 @@ using CefSharp;
 using System;
 using System.IO;
 using System.Windows.Forms;
+using LyngdorfBrowser.Class;
 using static LyngdorfBrowser.Class.FileLogger;
 
 namespace LyngdorfBrowser
@@ -27,7 +28,7 @@ namespace LyngdorfBrowser
             // Set and reuse the cache folder path
             var cacheFolderPath = Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                Application.ProductName + "\\Cache"
+                Globals.ToolName.LyngdorfBrowser + "\\Cache"
             );
 
             // Ensure cache folder exists, handle errors and exit early if needed
