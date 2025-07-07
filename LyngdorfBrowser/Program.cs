@@ -32,7 +32,7 @@ namespace LyngdorfBrowser
             // Create the cache folder if it doesn't exist
             if (!Directory.Exists(cacheFolderPath))
             {
-                // Try to create folder folder and perform error correction
+                // Try to create folder and perform error correction
                 try
                 {
                     Directory.CreateDirectory(cacheFolderPath);
@@ -69,16 +69,21 @@ namespace LyngdorfBrowser
             var settings = new CefSettings()
             {
                 // Specify the cache folder path to persist data
-                // By default CefSharp will use an in-memory cache, you need to specify a Cache Folder to persist data
-                CachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), Application.ProductName + "\\Cache")
+                CachePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), Application.ProductName + "\\Cache"),
+                LogSeverity = LogSeverity.Default // Set this here, before Cef.Initialize
             };
 
-            // Disable logging severity
-            settings.LogSeverity = LogSeverity.Disable;
-
-            // Perform dependency check to make sure all relevant resources are in our output directory.
-            Cef.Initialize(settings, performDependencyCheck: true, browserProcessHandler: null);
-            Message("Initialized Cef with settings: settings, performDependencyCheck: true, browserProcessHandler: null", EventType.Information, 1000);
+            try
+            {
+                Cef.Initialize(settings, performDependencyCheck: true, browserProcessHandler: null);
+                Message("Initialized Cef with settings: settings, performDependencyCheck: true, browserProcessHandler: null", EventType.Information, 1000);
+            }
+            catch (FileLoadException ex)
+            {
+                Message("CefSharp FileLoadException: " + ex.Message + " - " + ex.FusionLog, EventType.Error, 1002);
+                MessageBox.Show(@"CefSharp failed to load: " + ex.Message, @"CefSharp Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
 
             Message("Initializing GUI", EventType.Information, 1000);
 
