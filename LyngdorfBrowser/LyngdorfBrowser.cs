@@ -247,7 +247,7 @@ If this not works, use the commandline to connect to a specific IP address in th
             }
 
             // Log the closing message
-            Message("Application ended", EventType.Information, 1000);
+            Message("Application " + Globals.ToolName.LyngdorfBrowser + " ended", EventType.Information, 1000);
         }
     }
 }
