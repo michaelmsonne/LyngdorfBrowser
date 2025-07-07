@@ -33,6 +33,8 @@ namespace LyngdorfBrowser
 
         private async void CheckConnection()
         {
+            Message("Starting connection check...", EventType.Information, 1000);
+
             if (_chromeBrowser == null || !_chromeBrowser.IsBrowserInitialized) return;
 
             _connectionTimer.Stop();
@@ -41,7 +43,7 @@ namespace LyngdorfBrowser
                 var response = await _chromeBrowser.EvaluateScriptAsync("navigator.onLine");
                 if (response.Success && response.Result is bool isOnline && isOnline)
                 {
-                    StatusText = "Website is reachable";
+                    StatusText = $"Website '{_url}' with title '{TitleText}' is reachable";
 #if DEBUG
             ShowStatusMessage($"Website '{TitleText}' is reachable", MessageBoxIcon.Information, EventType.Information, "Can connect");
 #endif
@@ -61,6 +63,8 @@ namespace LyngdorfBrowser
             {
                 _connectionTimer.Start();
             }
+
+            Message($"Connection check result: {StatusText}", EventType.Information, 1000);
         }
 
         private void ShowStatusMessage(string message, MessageBoxIcon icon, EventType eventType, string title)
@@ -113,6 +117,8 @@ namespace LyngdorfBrowser
                 InitializeChromium();
             }
 
+            Message("MainForm loading. Command-line args: " + string.Join(", ", args), EventType.Information, 1000);
+
             InitializeConnectionTimer();
         }
 
@@ -134,6 +140,9 @@ namespace LyngdorfBrowser
                 if (string.IsNullOrWhiteSpace(ipAddress))
                 {
                     Message("Argument for IP address is null, will find device on the network", EventType.Information, 1000);
+
+                    Message("Attempting to find device IP from MAC address.", EventType.Information, 1000);
+
                     ipAddress = IpMacMapper.FindIpFromMacAddress("50-1e-2d");
 
                     if (string.IsNullOrWhiteSpace(ipAddress))
@@ -142,6 +151,8 @@ namespace LyngdorfBrowser
                         return;
                     }
                 }
+
+                Message($"Device discovery result: {(ipAddress ?? "not found")}", EventType.Information, 1000);
 
                 _url = $"http://{ipAddress.Replace("\"", "")}";
                 Message($"Found IP address, will connect to the device on the network: {_url}", EventType.Information, 1000);
@@ -160,6 +171,8 @@ namespace LyngdorfBrowser
                 };
                 Controls.Add(_chromeBrowser);
                 _chromeBrowser.TitleChanged += Browser_TitleChanged;
+
+                Message("ChromiumWebBrowser instance created and added to form controls.", EventType.Information, 1000);
             }
             catch (Exception ex)
             {
@@ -216,6 +229,10 @@ namespace LyngdorfBrowser
                 Console.WriteLine(exception);
                 throw;
             }
+
+            Message("MainForm closing. Performing cleanup.", EventType.Information, 1000);
+
+            LocalLogCleanup.CleanupLogs();
 
             // Log the closing message
             Message("Application " + Globals.ToolName.LyngdorfBrowser + " ended", EventType.Information, 1000);
