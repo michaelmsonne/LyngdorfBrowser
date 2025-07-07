@@ -18,6 +18,7 @@ namespace LyngdorfBrowser
         public string StatusText;
         private System.Timers.Timer _connectionTimer;
         private bool _isTimerPaused;
+        private const double ConnectionCheckIntervalMs = 5000;
 
         public MainForm()
         {
@@ -73,44 +74,46 @@ namespace LyngdorfBrowser
             }
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private bool TryInitializeChromiumWithArgument(string arg)
         {
-            OriginalText = Text; // Store the original form text in a variable
-
-            // Check arguments
-            string[] args = Environment.GetCommandLineArgs();
-            if (args.Length > 1)
+            if (IPAddress.TryParse(arg, out _))
             {
-                // If an argument is used, try to use it as ip address for the device
-                string ipAddress = args[1];
-
-                // Validate the IP address
-                if (IPAddress.TryParse(ipAddress, out _))
-                {
-                    InitializeChromium(ipAddress);
-                }
-                else
-                {
-                    // If the IP address parsed it not in IP address format show it to the user and exit application
-                    Message($"Invalid IP address argument - try again", EventType.Error, 1001);
-                    MessageBox.Show(@"Invalid IP address argument - try again", @"Error - not a valid IP address set in argument", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    Environment.Exit(1);
-                }
+                InitializeChromium(arg);
+                return true;
             }
             else
             {
-                // If no arguments is set, find device on the network from MAC address (vendor)
+                Message("Invalid IP address argument - try again", EventType.Error, 1001);
+                MessageBox.Show(@"Invalid IP address argument - try again", @"Error - not a valid IP address set in argument", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Environment.Exit(1);
+                return false;
+            }
+        }
+
+        private void InitializeConnectionTimer()
+        {
+            _connectionTimer = new System.Timers.Timer(ConnectionCheckIntervalMs);
+            _connectionTimer.Elapsed += ConnectionTimerElapsed;
+            Message("Calling CheckConnection() code to ensure device still online and run that", EventType.Information, 1000);
+            _connectionTimer.Start();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            OriginalText = Text;
+
+            string[] args = Environment.GetCommandLineArgs();
+            if (args.Length > 1)
+            {
+                if (!TryInitializeChromiumWithArgument(args[1]))
+                    return;
+            }
+            else
+            {
                 InitializeChromium();
             }
 
-            // Start the connection checking timer
-            _connectionTimer = new System.Timers.Timer(5000); // Set the interval to 5 seconds (adjust as needed)
-
-            // Log the connection check message
-            Message($"Calling CheckConnection() code to ensure device still online and run that", EventType.Information, 1000);
-
-            _connectionTimer.Elapsed += ConnectionTimerElapsed;
-            _connectionTimer.Start();
+            InitializeConnectionTimer();
         }
 
         public void InitializeChromium(string ipAddress = null)
