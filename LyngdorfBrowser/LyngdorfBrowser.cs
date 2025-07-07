@@ -123,7 +123,7 @@ namespace LyngdorfBrowser
                 "Try again or connect to your network with a cable.\n\n" +
                 "If this does not work, use the command line to connect to a specific IP address in this format:\n\n" +
                 @".\LyngdorfBrowser.exe 192.168.1.200";
-            MessageBox.Show(msg, "Can't connect to device", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            MessageBox.Show(msg, @"Can't connect to device", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             Environment.Exit(1);
         }
 
@@ -164,8 +164,8 @@ namespace LyngdorfBrowser
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    $"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool. IP: {ipAddress}{Environment.NewLine}Error: {ex}",
-                    "Device Connection Error",
+                    $@"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool. IP: {ipAddress}{Environment.NewLine}Error: {ex}",
+                    @"Device Connection Error",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
 
