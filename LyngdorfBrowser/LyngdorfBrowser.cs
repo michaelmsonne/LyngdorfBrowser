@@ -30,87 +30,46 @@ namespace LyngdorfBrowser
             CheckConnection();
         }
 
-        private void CheckConnection()
+        private async void CheckConnection()
         {
+            if (_chromeBrowser == null || !_chromeBrowser.IsBrowserInitialized) return;
+
+            _connectionTimer.Stop();
             try
             {
-                if (_chromeBrowser == null || !_chromeBrowser.IsBrowserInitialized) return;
-                // Pause the timer
-                _connectionTimer.Stop();
-
-                // Execute JavaScript code to check if the website is still reachable
-                _chromeBrowser.EvaluateScriptAsync("navigator.onLine").ContinueWith(task =>
+                var response = await _chromeBrowser.EvaluateScriptAsync("navigator.onLine");
+                if (response.Success && response.Result is bool isOnline && isOnline)
                 {
-                    if (task.IsCompleted && !task.IsFaulted)
-                    {
-                        var response = task.Result;
-                        if (response.Success && response.Result is bool isOnline && isOnline)
-                        {
-                            // Website is reachable
-                            StatusText = "Website is reachable";
+                    StatusText = "Website is reachable";
 #if DEBUG
-                                _isTimerPaused = true;
-                                MessageBox.Show(@"Website '" + TitleText + @"' is reachable", @"Can connect", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                _isTimerPaused = false;
+            ShowStatusMessage($"Website '{TitleText}' is reachable", MessageBoxIcon.Information, EventType.Information, "Can connect");
 #endif
-                        }
-                        else
-                        {
-                            // Website is not reachable
-                            if (!_isTimerPaused)
-                            {
-                                _isTimerPaused = true;
-
-                                // Show message to user
-                                MessageBox.Show(@"Website '" + TitleText + @"' is not reachable", @"Can't connect right now", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                                // Log the connection check message
-                                Message("Website '" + TitleText + @"' is not reachable by now", EventType.Error, 1001);
-
-                                _isTimerPaused = false;
-                            }
-
-                            // Update the status text
-                            StatusText = "Website " + TitleText + @" is not reachable";
-                        }
-                    }
-                    else
-                    {
-                        // Error occurred while checking the connection
-                        if (!_isTimerPaused)
-                        {
-                            _isTimerPaused = true;
-
-                            MessageBox.Show(@"An error occurred while checking the connection to '" + TitleText + @"'.", @"Can't connect right now", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                            // Log the connection check message
-                            Message("An error occurred while checking the connection to '" + TitleText+ ".", EventType.Error, 1001);
-
-                            _isTimerPaused = false;
-                        }
-
-                        // Update the status text
-                        StatusText = "An error occurred while checking the connection to '" + TitleText + @"'";
-                    }
-
-                    // Resume the timer
-                    _connectionTimer.Start();
-                });
+                }
+                else
+                {
+                    ShowStatusMessage($"Website '{TitleText}' is not reachable", MessageBoxIcon.Warning, EventType.Warning, "Can't connect");
+                    StatusText = $"Website {TitleText} is not reachable";
+                }
             }
             catch (Exception ex)
             {
-#if DEBUG
-                if (!_isTimerPaused)
-                {
-                    _isTimerPaused = true;
-                    MessageBox.Show(@"An error occurred while checking the connection to: '" + TitleText + @"'." + Environment.NewLine + @"Error: " + ex.Message, @"Can't connect right now", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    _isTimerPaused = false;
-                }
-#endif
-                StatusText = "An error occurred while checking the connection to '" + TitleText + @"': " + ex.Message;
-
-                // Resume the timer
+                ShowStatusMessage($"An error occurred while checking the connection to '{TitleText}'.\nError: {ex.Message}", MessageBoxIcon.Warning, EventType.Error, "Can't connect");
+                StatusText = $"An error occurred while checking the connection to '{TitleText}': {ex.Message}";
+            }
+            finally
+            {
                 _connectionTimer.Start();
+            }
+        }
+
+        private void ShowStatusMessage(string message, MessageBoxIcon icon, EventType eventType, string title)
+        {
+            if (!_isTimerPaused)
+            {
+                _isTimerPaused = true;
+                MessageBox.Show(message, title, MessageBoxButtons.OK, icon);
+                Message(message, eventType, 1001);
+                _isTimerPaused = false;
             }
         }
 
