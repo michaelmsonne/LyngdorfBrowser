@@ -116,51 +116,60 @@ namespace LyngdorfBrowser
             InitializeConnectionTimer();
         }
 
+        private void ShowDeviceNotFoundMessage()
+        {
+            string msg =
+                "No Lyngdorf devices found on your network.\n" +
+                "Try again or connect to your network with a cable.\n\n" +
+                "If this does not work, use the command line to connect to a specific IP address in this format:\n\n" +
+                @".\LyngdorfBrowser.exe 192.168.1.200";
+            MessageBox.Show(msg, "Can't connect to device", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            Environment.Exit(1);
+        }
+
         public void InitializeChromium(string ipAddress = null)
         {
             try
             {
-                // If argument for IP address is null, find device on the network
-                if (ipAddress == null)
+                if (string.IsNullOrWhiteSpace(ipAddress))
                 {
-                    // Log the initialization message
-                    Message($"Argument for IP address is null, will find device on the network", EventType.Information, 1000);
-
-                    // Find the IP address for the device on the network
+                    Message("Argument for IP address is null, will find device on the network", EventType.Information, 1000);
                     ipAddress = IpMacMapper.FindIpFromMacAddress("50-1e-2d");
 
-                    if (ipAddress == null)
+                    if (string.IsNullOrWhiteSpace(ipAddress))
                     {
-                        MessageBox.Show(@"No Lyngdorf devices found on your network.
-Try again or connect to your network with a cable.
-
-If this not works, use the commandline to connect to a specific IP address in this format:
-
-.\LyngdorfBrowser.exe 192.168.1.200", @"Can´s connect to device", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        Environment.Exit(1);
+                        ShowDeviceNotFoundMessage();
+                        return;
                     }
                 }
 
-                // Set IP address for the browser for the device to use
-                _url = "http://" + ipAddress.Replace("\"", "");
+                _url = $"http://{ipAddress.Replace("\"", "")}";
+                Message($"Found IP address, will connect to the device on the network: {_url}", EventType.Information, 1000);
+                Message("Starting up ChromiumWebBrowser and setup", EventType.Information, 1000);
 
-                // Log the found IP address message
-                Message("Found IP address, will connect to the device on the network: " + ipAddress.Replace("\"", ""), EventType.Information, 1000);
+                // Dispose previous browser if it exists
+                if (_chromeBrowser != null)
+                {
+                    Controls.Remove(_chromeBrowser);
+                    _chromeBrowser.Dispose();
+                }
 
-                // Log the initialization message
-                Message("Stating up ChromiumWebBrowser and setup", EventType.Information, 1000);
-
-                _chromeBrowser = new ChromiumWebBrowser(_url);
+                _chromeBrowser = new ChromiumWebBrowser(_url)
+                {
+                    Dock = DockStyle.Fill
+                };
                 Controls.Add(_chromeBrowser);
                 _chromeBrowser.TitleChanged += Browser_TitleChanged;
-                _chromeBrowser.Dock = DockStyle.Fill;
             }
             catch (Exception ex)
             {
-                // If error somehow
-                MessageBox.Show(@"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool. IP: "+ ipAddress + Environment.NewLine + @"Error: " + ex);
+                MessageBox.Show(
+                    $"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool. IP: {ipAddress}{Environment.NewLine}Error: {ex}",
+                    "Device Connection Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
 
-                Message("Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool. Error: " + ex, EventType.Error, 1001);
+                Message($"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool. Error: {ex}", EventType.Error, 1001);
             }
         }
 
