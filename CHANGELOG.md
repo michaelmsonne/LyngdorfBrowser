@@ -8,6 +8,13 @@ Updates:
     - cef.redist.x86.139.0.280 -> cef.redist.x86.140.1.140
     - cef.redist.x64.139.0.280 -> cef.redist.x64.140.1.140
 
+Added:
+   - Add connection status indicator to MainForm - Introduced a `StatusStrip` (`connectionIndicator`) and a `Label` (`statusLabel`) to visually display the application's connection status.
+   - Enhanced `CheckConnection`, `InitializeChromium`, and `TryInitializeChromiumWithArgument` to provide real-time feedback.
+   - Updated `MainForm_FormClosing` to display shutdown status.
+   - Ensured thread-safe UI updates using `Invoke` where necessary.
+   - Improved error handling to display appropriate status messages.
+
 ## [1.0.0.6] - 18-03-2024
 Updates:
 - Update 3. party packets there is used by the application
