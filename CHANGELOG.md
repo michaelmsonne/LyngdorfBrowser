@@ -1,3 +1,24 @@
+# Changelog
+
+## [1.0.0.7] - 02-10-2025
+Updates:
+- Update 3. party packets there is used by the application
+    - CefSharp.WinForms.139.0.280 -> CefSharp.WinForms.140.1.140
+    - CefSharp.Common.139.0.280 -> CefSharp.Common.140.1.140
+    - cef.redist.x86.139.0.280 -> cef.redist.x86.140.1.140
+    - cef.redist.x64.139.0.280 -> cef.redist.x64.140.1.140
+
+## [1.0.0.6] - 18-03-2024
+Updates:
+- Update 3. party packets there is used by the application
+    - CefSharp.WinForms.119.4.30 -> CefSharp.WinForms.122.1.120
+    - CefSharp.Common.119.4.30 -> CefSharp.Common.122.1.120
+    - cef.redist.x86.119.4.3 -> cef.redist.x86.120.2.7
+    - cef.redist.x64.119.4.3 -> cef.redist.x64.120.2.7
+Installing:
+    - chromiumembeddedframework.runtime.win-x64.122.1.12
+    - chromiumembeddedframework.runtime.win-x86.122.1.12 
+
 ## [1.0.0.5] - 11-12-2023
 Updates:
 - Clode cleanup/optimization
