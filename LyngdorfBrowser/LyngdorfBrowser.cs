@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CefSharp;
+using CefSharp.WinForms;
+using LyngdorfBrowser.Class;
+using System;
+using System.Drawing;
 using System.Net;
 using System.Timers;
 using System.Windows.Forms;
-using CefSharp;
-using CefSharp.WinForms;
-using LyngdorfBrowser.Class;
 using static LyngdorfBrowser.Class.FileLogger;
 
 namespace LyngdorfBrowser
@@ -35,34 +36,47 @@ namespace LyngdorfBrowser
         {
             Message("Starting connection check...", EventType.Information, 1000);
 
-            if (_chromeBrowser == null || !_chromeBrowser.IsBrowserInitialized) return;
+            if (_chromeBrowser == null || !_chromeBrowser.IsBrowserInitialized)
+            {
+                ShowConnectionStatus("Browser not initialized", false);
+                return;
+            }
 
             _connectionTimer.Stop();
             try
             {
+                ShowConnectionStatus("Checking connection...", false);
+
                 var response = await _chromeBrowser.EvaluateScriptAsync("navigator.onLine");
                 if (response.Success && response.Result is bool isOnline && isOnline)
                 {
                     StatusText = $"Website '{_url}' with title '{TitleText}' is reachable";
+                    ShowConnectionStatus($"Connected to {TitleText}", true);
+
 #if DEBUG
             ShowStatusMessage($"Website '{TitleText}' is reachable", MessageBoxIcon.Information, EventType.Information, "Can connect");
 #endif
                 }
                 else
                 {
-                    ShowStatusMessage($"Website '{TitleText}' is not reachable", MessageBoxIcon.Warning, EventType.Warning, "Can't connect");
                     StatusText = $"Website {TitleText} is not reachable";
+                    ShowConnectionStatus($"Disconnected from {TitleText}", false);
+
+                    ShowStatusMessage($"Website '{TitleText}' is not reachable", MessageBoxIcon.Warning, EventType.Warning, "Can't connect");
                 }
             }
             catch (Exception ex)
             {
-                ShowStatusMessage($"An error occurred while checking the connection to '{TitleText}'.\nError: {ex.Message}", MessageBoxIcon.Warning, EventType.Error, "Can't connect");
                 StatusText = $"An error occurred while checking the connection to '{TitleText}': {ex.Message}";
+                ShowConnectionStatus($"Connection error: {ex.Message}", false);
+
+                ShowStatusMessage($"An error occurred while checking the connection to '{TitleText}'.\nError: {ex.Message}", MessageBoxIcon.Warning, EventType.Error, "Can't connect");
             }
             finally
             {
                 _connectionTimer.Start();
             }
+
 #if DEBUG
             Message($"Connection check result: {StatusText}", EventType.Information, 1000);
 #endif
@@ -83,11 +97,13 @@ namespace LyngdorfBrowser
         {
             if (IPAddress.TryParse(arg, out _))
             {
+                ShowConnectionStatus("Validating IP address...", false);
                 InitializeChromium(arg);
                 return true;
             }
             else
             {
+                ShowConnectionStatus("Invalid IP address", false); // Error state
                 Message("Invalid IP address argument - try again", EventType.Error, 1001);
                 MessageBox.Show(@"Invalid IP address argument - try again", @"Error - not a valid IP address set in argument", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(1);
@@ -138,9 +154,12 @@ namespace LyngdorfBrowser
         {
             try
             {
+                ShowConnectionStatus("Initializing...", false);
+
                 if (string.IsNullOrWhiteSpace(ipAddress))
                 {
                     Message("Argument for IP address is null, will find device on the network", EventType.Information, 1000);
+                    ShowConnectionStatus("Searching for devices...", false);
 
                     Message("Attempting to find device IP from MAC address.", EventType.Information, 1000);
 
@@ -148,6 +167,7 @@ namespace LyngdorfBrowser
 
                     if (string.IsNullOrWhiteSpace(ipAddress))
                     {
+                        ShowConnectionStatus("No devices found", false);
                         ShowDeviceNotFoundMessage();
                         return;
                     }
@@ -158,6 +178,8 @@ namespace LyngdorfBrowser
                 _url = $"http://{ipAddress.Replace("\"", "")}";
                 Message($"Found IP address, will connect to the device on the network: {_url}", EventType.Information, 1000);
                 Message("Starting up ChromiumWebBrowser and setup", EventType.Information, 1000);
+
+                ShowConnectionStatus($"Connecting to {ipAddress}...", false);
 
                 // Dispose previous browser if it exists
                 if (_chromeBrowser != null)
@@ -170,13 +192,22 @@ namespace LyngdorfBrowser
                 {
                     Dock = DockStyle.Fill
                 };
+
+                // Position the browser above the status strip
+                _chromeBrowser.Dock = DockStyle.Fill;
                 Controls.Add(_chromeBrowser);
+                _chromeBrowser.BringToFront();
+
                 _chromeBrowser.TitleChanged += Browser_TitleChanged;
+                _chromeBrowser.LoadingStateChanged += Browser_LoadingStateChanged;
 
                 Message("ChromiumWebBrowser instance created and added to form controls.", EventType.Information, 1000);
+                ShowConnectionStatus("Browser initialized", true);
             }
             catch (Exception ex)
             {
+                ShowConnectionStatus($"Connection failed: {ex.Message}", false);
+
                 MessageBox.Show(
                     $@"Failed to get the IP address for the Lyngdorf device found on your network or the device is not supported for this tool. IP: {ipAddress}{Environment.NewLine}Error: {ex}",
                     @"Device Connection Error",
@@ -213,6 +244,8 @@ namespace LyngdorfBrowser
         {
             try
             {
+                ShowConnectionStatus("Shutting down...", false);
+
                 // Stop the connection checking timer
                 _connectionTimer?.Stop();
 
@@ -227,6 +260,7 @@ namespace LyngdorfBrowser
             }
             catch (Exception exception)
             {
+                ShowConnectionStatus("Shutdown error", false);
                 Console.WriteLine(exception);
                 throw;
             }
@@ -237,6 +271,38 @@ namespace LyngdorfBrowser
 
             // Log the closing message
             Message("Application " + Globals.ToolName.LyngdorfBrowser + " ended", EventType.Information, 1000);
+        }
+
+        // Add this new event handler to track loading state
+        private void Browser_LoadingStateChanged(object sender, LoadingStateChangedEventArgs e)
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action(() => Browser_LoadingStateChanged(sender, e)));
+                return;
+            }
+
+            if (e.IsLoading)
+            {
+                ShowConnectionStatus("Loading page...", false);
+            }
+            else
+            {
+                ShowConnectionStatus($"Connected to {TitleText ?? "device"}", true);
+            }
+        }
+
+        private void ShowConnectionStatus(string status, bool isConnected, string details = null)
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action(() => ShowConnectionStatus(status, isConnected, details)));
+                return;
+            }
+
+            statusLabel.Text = status;
+            statusLabel.ForeColor = isConnected ? Color.Green : Color.Red;
+            connectionIndicator.BackColor = isConnected ? Color.Green : Color.Red;
         }
     }
 }
